@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border: 5px solid #BEBEBE;
+  border: 10px solid #fff;
+  background-color: #f6f6f6;
   bottom: 100%;
   padding: 0;
   width: 100%;
