@@ -3,16 +3,19 @@ import './App.css';
 import logo from './logo.svg';
 import Toggle from './Toggle';
 import hand from './handNoBg.png';
+import images from './images';
 
 const baseList = [
   {
     name: 'On Naturals',
+    class: 'base',
     hex: '#FFA500',
     price: '10',
     objectID: 0,
   },
   {
     name: 'Extensions',
+    class: 'base',
     hex: '#b0e0e6',
     price: '20',
     objectID: 1,
@@ -22,60 +25,70 @@ const baseList = [
 const colourList = [
   {
     name: 'Orange Princess',
+    class: 'colour',
     hex: '#FFA500',
     price: '5',
     objectID: 0,
   },
   {
     name: 'Michelle',
+    class: 'colour',
     hex: '#b0e0e6',
     price: '20',
     objectID: 1,
   },
   {
     name: 'Grey',
+    class: 'colour',
     hex: '#f6f6f6',
     price: '25',
     objectID: 2,
   },
   {
     name: 'Red',
+    class: 'colour',
     hex: '#FFA500',
     price: '5',
     objectID: 3,
   },
   {
     name: 'Green',
+    class: 'colour',
     hex: '#b0e0e6',
     price: '20',
     objectID: 4,
   },
   {
     name: 'Pink',
+    class: 'colour',
     hex: '#f6f6f6',
     price: '25',
     objectID: 5,
   },
   {
     name: 'Purple',
+    class: 'colour',
     hex: '#f6f6f6',
     price: '25',
     objectID: 6,
   },
   {
     name: 'Yellow',
+    class: 'colour',
     hex: '#FFA500',
     price: '5',
     objectID: 7,
   },
   {
     name: 'Brown',
+    class: 'colour',
     hex: '#b0e0e6',
     price: '20',
     objectID: 8,
   },
   {
     name: 'Black',
+    class: 'colour',
     hex: '#f6f6f6',
     price: '25',
     objectID: 9,
@@ -85,75 +98,59 @@ const colourList = [
 const shapeList = [
   {
     name: 'Square',
+    class: 'shape',
     hex: '#FFA500',
     price: '10',
     objectID: 0,
   },
   {
     name: 'Round',
+    class: 'shape',
     hex: '#b0e0e6',
     price: '20',
     objectID: 1,
   },
   {
     name: 'Squoval',
+    class: 'shape',
     hex: '#FFA500',
     price: '10',
     objectID: 2,
   },
   {
     name: 'Oval',
+    class: 'shape',
     hex: '#b0e0e6',
     price: '20',
     objectID: 3,
   },
   {
     name: 'Almond',
+    class: 'shape',
     hex: '#FFA500',
     price: '10',
     objectID: 4,
   },
   {
     name: 'Stiletto',
+    class: 'shape',
     hex: '#b0e0e6',
     price: '20',
     objectID: 5,
   },
   {
     name: 'Ballerina',
+    class: 'shape',
     hex: '#FFA500',
     price: '10',
     objectID: 6,
   },
   {
-    name: 'Lipstick',
+    name: 'Coffin',
+    class: 'shape',
     hex: '#b0e0e6',
     price: '20',
     objectID: 7,
-  },
-  {
-    name: 'Flare',
-    hex: '#FFA500',
-    price: '10',
-    objectID: 8,
-  },
-  {
-    name: 'Edge',
-    hex: '#b0e0e6',
-    price: '20',
-    objectID: 9,
-  },
-  {
-    name: 'Arrowhead',
-    hex: '#FFA500',
-    price: '10',
-    objectID: 10,
-  },
-  {
-    name: 'Mountain Peak',
-    hex: '#b0e0e6',
-    price: '20',
-    objectID: 11,
   },
 ];
 
@@ -168,15 +165,33 @@ class App extends Component {
       chosenBase: "",
       colourList: colourList,
       chosenColour: "",
+      shapeList: shapeList,
+      chosenShape: "",
       length: "",
+      handChoice: "",
+      price: "",
     }
 
     this.onPick = this.onPick.bind(this);
     this.onLengthChange = this.onLengthChange.bind(this);
   }
 
-  onPick(colour) {
-    this.setState({ chosenColour: colour }, () => console.log(this.state.chosenColour));
+  onPick(pick) {
+    switch (pick.class) {
+      case 'base':
+          this.setState({ chosenBase: pick }, () => console.log(this.state.chosenBase));
+        break;
+      case 'colour':
+          this.setState({ chosenColour: pick }, () => console.log(this.state.chosenColour));
+        break;
+      case 'shape':
+          this.setState({ chosenShape: pick }, () => console.log(this.state.chosenShape));
+        break;
+      default:
+        console.log('Issue setting ' + pick + 'to the state.');
+
+    }
+
     // CREATE A NEW LOCAL STATE OF PRICE, THEN IN THIS PICK FUNCTION PUT THE SELECTED OBJECTS PRICE IN THE PRICE STATE. ALSO ADD A IF STATEMENT IN THIS FUNCTION, TO DIFFERENTIATE BETWEEN A COLOUR CHOICE AND THE BASE CHOICE
   }
 
@@ -186,7 +201,7 @@ class App extends Component {
 
 
   render() {
-    const { colourList, chosenColour } = this.state;
+    const { chosenColour, chosenBase, chosenShape } = this.state;
 
     return (
       <div className="App">
@@ -240,14 +255,19 @@ class App extends Component {
             </Toggle>
           </div>
 
+          {/* <Canvas /> */}
+
           <Visualise
             // base={chosenBase}
-            colour={chosenColour}
-          ></Visualise>
+            colour={chosenColour}>
+
+          </Visualise>
 
 
-          <Cost price={chosenColour.price}>
-            { chosenColour
+
+
+          <Cost price={chosenBase.price + chosenColour.price + chosenShape.price}>
+            { chosenColour || chosenBase || chosenShape
               ? <h3 id="total">Total</h3>
               : null
             }
@@ -314,6 +334,38 @@ const Button = ({ onClick, className = '', children }) =>
 
 	    {children}
 	  </button>
+
+
+//     class Canvas extends Component {
+//
+// componentDidMount() {
+//     this.updateCanvas();
+// }
+//
+// updateCanvas() {
+//     const ctx = this.refs.canvas.getContext('2d');
+//
+//     const imageObj1 = new Image();
+//     imageObj1.src = {hand};
+//     console.log(imageObj1);
+//
+//     imageObj1.onload = function() {
+//         ctx.drawImage(imageObj1,0,0);
+//
+// }
+//
+// }
+// render() {
+//     return (
+//
+//
+//         <canvas ref="canvas" width={300} height={900}> </canvas>
+//
+//     );
+//  }
+// };
+
+
 
 
 
