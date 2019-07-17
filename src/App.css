@@ -9,7 +9,12 @@ button {
   border: none;
   font-weight: 900;
   color: #BEBEBE;
+  background-color: #fff;
   font-size: 1.5em;
+  hyphens: manual;
+}
+button:focus {
+  outline: 0;
 }
 
 .colBox {
@@ -21,6 +26,21 @@ button {
   color: #000;
   background-color: #fff;
   font-size: 12px;
+}
+.colBox:focus {
+  outline: 0;
+  color: #fff;
+  background-color: grey;
+}
+.colBox:hover {
+  outline: 0;
+  color: #000;
+  background-color: #e8e8e8;
+}
+.colBox:active {
+  outline: 0;
+  color: #fff;
+  background-color: grey;
 }
 
 .colourPeak {
@@ -48,6 +68,13 @@ button {
 .sideBar, ul {
   list-style: none;
   overflow: scroll;
+}
+
+.label {
+  font-weight: 900;
+  color: #BEBEBE;
+  font-size: 3em;
+
 }
 
 .bottomBar {
@@ -92,8 +119,4 @@ button {
 
 #handPic {
   text-align: center;
-}
-
-canvas {
-  
 }

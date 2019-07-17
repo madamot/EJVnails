@@ -2,96 +2,437 @@ import React, { Component } from 'react';
 import './App.css';
 import logo from './logo.svg';
 import Toggle from './Toggle';
-import hand from './handNoBg.png';
-import images from './images';
+import images from './images.js';
 
 const baseList = [
   {
     name: 'On Naturals',
     class: 'base',
     hex: '#FFA500',
-    price: '10',
+    style: 'natural',
+    handChoice: '/Assets/standard.png',
+    price: 10,
     objectID: 0,
   },
   {
     name: 'Extensions',
     class: 'base',
     hex: '#b0e0e6',
-    price: '20',
+    style: 'extensions',
+    handChoice: '/Assets/extensions.png',
+    price: 20,
     objectID: 1,
   },
 ];
 
 const colourList = [
   {
-    name: 'Orange Princess',
+    name: 'Snow Queen',
     class: 'colour',
     hex: '#FFA500',
-    price: '5',
+    handChoiceNatural: '/Assets/hand_blue.png',
+    handChoiceExtensions: '/Assets/extensions_snowqueen.png',
+    price: 5,
     objectID: 0,
+  },
+  {
+    name: 'Nightclub',
+    class: 'colour',
+    hex: '#b0e0e6',
+    price: 20,
+    objectID: 1,
+  },
+  {
+    name: 'Rose Gold',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 2,
+  },
+  {
+    name: 'Daisy',
+    class: 'colour',
+    hex: '#FFA500',
+    price: 5,
+    objectID: 3,
+  },
+  {
+    name: 'J01',
+    class: 'colour',
+    hex: '#b0e0e6',
+    price: 20,
+    objectID: 4,
+  },
+  {
+    name: 'Fluffy Cotton',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 5,
+  },
+  {
+    name: 'Diana',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 6,
+  },
+  {
+    name: 'Dolly',
+    class: 'colour',
+    hex: '#FFA500',
+    price: 5,
+    objectID: 7,
+  },
+  {
+    name: 'Pina Colada',
+    class: 'colour',
+    hex: '#b0e0e6',
+    price: 20,
+    objectID: 8,
+  },
+  {
+    name: 'Eve',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 9,
+  },
+  {
+    name: 'Gossip',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 10,
+  },
+  {
+    name: 'V07',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 11,
+  },
+  {
+    name: 'Teddy',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 12,
+  },
+  {
+    name: 'Baby',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 13,
+  },
+  {
+    name: 'June',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 14,
+  },
+  {
+    name: 'Marilyn',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 15,
+  },
+  {
+    name: 'Hollywood Star',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 16,
+  },
+  {
+    name: 'Pink Panther',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 17,
+  },
+  {
+    name: 'Waterlilly',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 18,
+  },
+  {
+    name: 'Gilly',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 19,
+  },
+  {
+    name: 'Angel Wing',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 21,
+  },
+  {
+    name: 'Flirting Again',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 22,
+  },
+  {
+    name: 'Miami',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 23,
+  },
+  {
+    name: 'Hot Lips',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 24,
+  },
+  {
+    name: 'Twiggy',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 25,
+  },
+  {
+    name: 'Peach',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 26,
+  },
+  {
+    name: 'Coral Touch',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 27,
+  },
+  {
+    name: 'Sunshine',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 28,
+  },
+  {
+    name: 'Orange Princess',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 29,
+  },
+  {
+    name: 'Peach Daiquiri',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 30,
+  },
+  {
+    name: 'Pastel v005',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 31,
+  },
+  {
+    name: 'Pastel v082',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 32,
+  },
+  {
+    name: 'Blue Marine',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 33,
   },
   {
     name: 'Michelle',
     class: 'colour',
-    hex: '#b0e0e6',
-    price: '20',
-    objectID: 1,
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 34,
   },
   {
-    name: 'Grey',
+    name: 'Pastel v110',
     class: 'colour',
     hex: '#f6f6f6',
-    price: '25',
-    objectID: 2,
+    price: 25,
+    objectID: 35,
   },
   {
-    name: 'Red',
-    class: 'colour',
-    hex: '#FFA500',
-    price: '5',
-    objectID: 3,
-  },
-  {
-    name: 'Green',
-    class: 'colour',
-    hex: '#b0e0e6',
-    price: '20',
-    objectID: 4,
-  },
-  {
-    name: 'Pink',
+    name: 'Serena',
     class: 'colour',
     hex: '#f6f6f6',
-    price: '25',
-    objectID: 5,
+    price: 25,
+    objectID: 36,
   },
   {
-    name: 'Purple',
+    name: 'Candy',
     class: 'colour',
     hex: '#f6f6f6',
-    price: '25',
-    objectID: 6,
+    price: 25,
+    objectID: 37,
   },
   {
-    name: 'Yellow',
-    class: 'colour',
-    hex: '#FFA500',
-    price: '5',
-    objectID: 7,
-  },
-  {
-    name: 'Brown',
-    class: 'colour',
-    hex: '#b0e0e6',
-    price: '20',
-    objectID: 8,
-  },
-  {
-    name: 'Black',
+    name: 'Crimson Charm',
     class: 'colour',
     hex: '#f6f6f6',
-    price: '25',
-    objectID: 9,
+    price: 25,
+    objectID: 38,
+  },
+  {
+    name: 'Belladonna',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 39,
+  },
+  {
+    name: 'Bonfire',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 40,
+  },
+  {
+    name: 'Velvet Red',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 41,
+  },
+  {
+    name: 'Jam',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 42,
+  },
+  {
+    name: 'Cacao',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 43,
+  },
+  {
+    name: 'Impulsive',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 44,
+  },
+  {
+    name: 'Deepest Mauve',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 45,
+  },
+  {
+    name: 'Berrylicious',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 46,
+  },
+  {
+    name: 'Cosmos',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 47,
+  },
+  {
+    name: 'Heartless',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 48,
+  },
+  {
+    name: 'N094',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 49,
+  },
+  {
+    name: 'Brittany',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 50,
+  },
+  {
+    name: 'Shadow',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 51,
+  },
+  {
+    name: 'Jumanji',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 52,
+  },
+  {
+    name: 'Thermo 4',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 53,
+  },
+  {
+    name: 'Jungle',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 54,
+  },
+  {
+    name: 'Galaxy',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 55,
+  },
+  {
+    name: 'Royal Navy',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 56,
+  },
+  {
+    name: 'Nightfall',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 57,
+  },
+  {
+    name: 'Jet Black',
+    class: 'colour',
+    hex: '#f6f6f6',
+    price: 25,
+    objectID: 58,
   },
 ];
 
@@ -100,56 +441,56 @@ const shapeList = [
     name: 'Square',
     class: 'shape',
     hex: '#FFA500',
-    price: '10',
+    price: 10,
     objectID: 0,
   },
   {
     name: 'Round',
     class: 'shape',
     hex: '#b0e0e6',
-    price: '20',
+    price: 20,
     objectID: 1,
   },
   {
     name: 'Squoval',
     class: 'shape',
     hex: '#FFA500',
-    price: '10',
+    price: 10,
     objectID: 2,
   },
   {
     name: 'Oval',
     class: 'shape',
     hex: '#b0e0e6',
-    price: '20',
+    price: 20,
     objectID: 3,
   },
   {
     name: 'Almond',
     class: 'shape',
     hex: '#FFA500',
-    price: '10',
+    price: 10,
     objectID: 4,
   },
   {
     name: 'Stiletto',
     class: 'shape',
     hex: '#b0e0e6',
-    price: '20',
+    price: 20,
     objectID: 5,
   },
   {
     name: 'Ballerina',
     class: 'shape',
     hex: '#FFA500',
-    price: '10',
+    price: 10,
     objectID: 6,
   },
   {
     name: 'Coffin',
     class: 'shape',
     hex: '#b0e0e6',
-    price: '20',
+    price: 20,
     objectID: 7,
   },
 ];
@@ -168,8 +509,7 @@ class App extends Component {
       shapeList: shapeList,
       chosenShape: "",
       length: "",
-      handChoice: "",
-      price: "",
+      handChoice: "/Assets/standard.png",
     }
 
     this.onPick = this.onPick.bind(this);
@@ -179,17 +519,22 @@ class App extends Component {
   onPick(pick) {
     switch (pick.class) {
       case 'base':
-          this.setState({ chosenBase: pick }, () => console.log(this.state.chosenBase));
+          this.setState({ chosenBase: pick, handChoice: pick.handChoice }, () => console.log(this.state.chosenBase));
         break;
       case 'colour':
           this.setState({ chosenColour: pick }, () => console.log(this.state.chosenColour));
+          if (this.state.chosenBase.style === 'extensions') {
+            this.setState({ handChoice: pick.handChoiceExtensions }, () => console.log(this.state.handChoice));
+          } else if (this.state.chosenBase.style === 'natural') {
+            this.setState({ handChoice: pick.handChoiceNatural }, () => console.log(this.state.handChoice));
+          }
+
         break;
       case 'shape':
           this.setState({ chosenShape: pick }, () => console.log(this.state.chosenShape));
         break;
       default:
         console.log('Issue setting ' + pick + 'to the state.');
-
     }
 
     // CREATE A NEW LOCAL STATE OF PRICE, THEN IN THIS PICK FUNCTION PUT THE SELECTED OBJECTS PRICE IN THE PRICE STATE. ALSO ADD A IF STATEMENT IN THIS FUNCTION, TO DIFFERENTIATE BETWEEN A COLOUR CHOICE AND THE BASE CHOICE
@@ -199,9 +544,8 @@ class App extends Component {
     this.setState({ length: event.target.value }, () => console.log(this.state.length));
   }
 
-
   render() {
-    const { chosenColour, chosenBase, chosenShape } = this.state;
+    const { chosenColour, chosenBase, chosenShape, handChoice } = this.state;
 
     return (
       <div className="App">
@@ -215,6 +559,7 @@ class App extends Component {
                     onPick={this.onPick}
                          />}
                   <button onClick={toggle}>Base</button>
+                  <h1 className="label">1</h1>
                 </div>
               )}
             </Toggle>
@@ -226,6 +571,7 @@ class App extends Component {
                     onPick={this.onPick}
                          />}
                   <button onClick={toggle}>Colours</button>
+                  <h1 className="label">2</h1>
                 </div>
               )}
             </Toggle>
@@ -237,6 +583,7 @@ class App extends Component {
                     onPick={this.onPick}
                          />}
                   <button onClick={toggle}>Shape</button>
+                  <h1 className="label">3</h1>
                 </div>
               )}
             </Toggle>
@@ -245,21 +592,21 @@ class App extends Component {
                 <div className="sideBar">
                   {on &&
                     <div className="slidecontainer">
-                      <input type="range" onChange={this.onLengthChange} step="1" min="1" max="20" value={this.state.value}></input>
+                      <input type="range" onChange={this.onLengthChange} step="1" min="1" max="5" value={this.state.value}></input>
                       <p>Value: <span id="demo">{this.state.length}</span></p>
                     </div>
                   }
                   <button onClick={toggle}>Length</button>
+                  <h1 className="label">4</h1>
                 </div>
               )}
             </Toggle>
           </div>
 
-          {/* <Canvas /> */}
 
           <Visualise
             // base={chosenBase}
-            colour={chosenColour}>
+            display={handChoice}>
 
           </Visualise>
 
@@ -267,7 +614,7 @@ class App extends Component {
 
 
           <Cost price={chosenBase.price + chosenColour.price + chosenShape.price}>
-            { chosenColour || chosenBase || chosenShape
+            { chosenBase
               ? <h3 id="total">Total</h3>
               : null
             }
@@ -285,12 +632,14 @@ class Table extends Component {
     return (
       <div>
         {list.map(pick =>
-          <Button onClick={() => onPick(pick)} type="button" key={pick.objectID} className="colBox">
+          <Button onClick={() => onPick(pick)} type="radio" key={pick.objectID} className="colBox">
             <span>
               <div className="colourPeak" style={{ backgroundColor: pick.hex }}></div>
             </span>
             <span>
               <br/>{pick.name}
+              <br/>
+              <br/>£{pick.price}
             </span>
           </Button>
         )}
@@ -301,10 +650,10 @@ class Table extends Component {
 
 class Visualise extends Component {
   render() {
-    // const { chosenColour } = this.props;
+    const { display } = this.props;
     return (
       <div className="visualiser">
-        <img src={hand} id="handPic" height="750px" alt="hand-plain"/>
+        <img src={ display } id="handPic" height="750px" alt="hand-plain"/>
 
       </div>
     );
@@ -329,7 +678,7 @@ const Button = ({ onClick, className = '', children }) =>
 	  <button
 	    onClick={onClick}
 	    className={className}
-	    type="button"
+	    type="radio"
    >
 
 	    {children}
