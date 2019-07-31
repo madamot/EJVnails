@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import logo from './logo.svg';
 import Toggle from './Toggle';
-import images from './images.js';
 
 const baseList = [
   {
@@ -10,7 +9,7 @@ const baseList = [
     class: 'base',
     hex: '#FFA500',
     style: 'natural',
-    handChoice: '/Assets/standard.png',
+    handChoice: '/Assets/hand_n1.png',
     price: 10,
     objectID: 0,
   },
@@ -19,7 +18,7 @@ const baseList = [
     class: 'base',
     hex: '#b0e0e6',
     style: 'extensions',
-    handChoice: '/Assets/extensions.png',
+    handChoice: '/Assets/hand_e1.png',
     price: 20,
     objectID: 1,
   },
@@ -30,8 +29,9 @@ const colourList = [
     name: 'Snow Queen',
     class: 'colour',
     hex: '#FFA500',
-    handChoiceNatural: '/Assets/hand_blue.png',
-    handChoiceExtensions: '/Assets/extensions_snowqueen.png',
+    handChoiceNatural: '/Assets/hand_n_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_snowqueen.png',
+    e_shapeStiletto: '/Assets/hand_e_stiletto_snowqueen.png',
     price: 5,
     objectID: 0,
   },
@@ -39,6 +39,8 @@ const colourList = [
     name: 'Nightclub',
     class: 'colour',
     hex: '#b0e0e6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_nightclub.png',
     price: 20,
     objectID: 1,
   },
@@ -46,6 +48,8 @@ const colourList = [
     name: 'Rose Gold',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_rosegold.png',
     price: 25,
     objectID: 2,
   },
@@ -53,6 +57,8 @@ const colourList = [
     name: 'Daisy',
     class: 'colour',
     hex: '#FFA500',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_daisy.png',
     price: 5,
     objectID: 3,
   },
@@ -60,6 +66,8 @@ const colourList = [
     name: 'J01',
     class: 'colour',
     hex: '#b0e0e6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_j01.png',
     price: 20,
     objectID: 4,
   },
@@ -67,6 +75,8 @@ const colourList = [
     name: 'Fluffy Cotton',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_fluffycotton.png',
     price: 25,
     objectID: 5,
   },
@@ -74,6 +84,8 @@ const colourList = [
     name: 'Diana',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_diana.png',
     price: 25,
     objectID: 6,
   },
@@ -81,6 +93,8 @@ const colourList = [
     name: 'Dolly',
     class: 'colour',
     hex: '#FFA500',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_dolly.png',
     price: 5,
     objectID: 7,
   },
@@ -88,6 +102,8 @@ const colourList = [
     name: 'Pina Colada',
     class: 'colour',
     hex: '#b0e0e6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_pinacolada.png',
     price: 20,
     objectID: 8,
   },
@@ -95,6 +111,8 @@ const colourList = [
     name: 'Eve',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_eve.png',
     price: 25,
     objectID: 9,
   },
@@ -102,6 +120,8 @@ const colourList = [
     name: 'Gossip',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_gossip.png',
     price: 25,
     objectID: 10,
   },
@@ -109,6 +129,8 @@ const colourList = [
     name: 'V07',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_v07.png',
     price: 25,
     objectID: 11,
   },
@@ -116,6 +138,8 @@ const colourList = [
     name: 'Teddy',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_teddy.png',
     price: 25,
     objectID: 12,
   },
@@ -123,6 +147,8 @@ const colourList = [
     name: 'Baby',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_baby.png',
     price: 25,
     objectID: 13,
   },
@@ -130,6 +156,8 @@ const colourList = [
     name: 'June',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_june.png',
     price: 25,
     objectID: 14,
   },
@@ -137,6 +165,8 @@ const colourList = [
     name: 'Marilyn',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_marilyn.png',
     price: 25,
     objectID: 15,
   },
@@ -144,6 +174,8 @@ const colourList = [
     name: 'Hollywood Star',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_hollywoodstar.png',
     price: 25,
     objectID: 16,
   },
@@ -151,6 +183,8 @@ const colourList = [
     name: 'Pink Panther',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_pinkpanther.png',
     price: 25,
     objectID: 17,
   },
@@ -158,6 +192,8 @@ const colourList = [
     name: 'Waterlilly',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_waterlily.png',
     price: 25,
     objectID: 18,
   },
@@ -165,6 +201,8 @@ const colourList = [
     name: 'Gilly',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_gilly.png',
     price: 25,
     objectID: 19,
   },
@@ -172,6 +210,8 @@ const colourList = [
     name: 'Angel Wing',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/naturals_snowqueen.png',
+    handChoiceExtensions: '/Assets/hand_e_angelwing.png',
     price: 25,
     objectID: 21,
   },
@@ -441,6 +481,7 @@ const shapeList = [
     name: 'Square',
     class: 'shape',
     hex: '#FFA500',
+    e_shape_SQ: '/Assets/hand_e_snowqueen.png',
     price: 10,
     objectID: 0,
   },
@@ -448,6 +489,7 @@ const shapeList = [
     name: 'Round',
     class: 'shape',
     hex: '#b0e0e6',
+    e_shape_SQ: '/Assets/hand_e_round_snowqueen.png',
     price: 20,
     objectID: 1,
   },
@@ -457,13 +499,6 @@ const shapeList = [
     hex: '#FFA500',
     price: 10,
     objectID: 2,
-  },
-  {
-    name: 'Oval',
-    class: 'shape',
-    hex: '#b0e0e6',
-    price: 20,
-    objectID: 3,
   },
   {
     name: 'Almond',
@@ -476,25 +511,19 @@ const shapeList = [
     name: 'Stiletto',
     class: 'shape',
     hex: '#b0e0e6',
+    e_shape_SQ: '/Assets/hand_e_stiletto_snowqueen.png',
     price: 20,
     objectID: 5,
   },
   {
-    name: 'Ballerina',
+    name: 'Ballerina/\nCoffin',
     class: 'shape',
     hex: '#FFA500',
+    e_shape_SQ: '/Assets/hand_e_coffin_snowqueen.png',
     price: 10,
     objectID: 6,
   },
-  {
-    name: 'Coffin',
-    class: 'shape',
-    hex: '#b0e0e6',
-    price: 20,
-    objectID: 7,
-  },
 ];
-
 
 class App extends Component {
 
@@ -509,7 +538,7 @@ class App extends Component {
       shapeList: shapeList,
       chosenShape: "",
       length: "",
-      handChoice: "/Assets/standard.png",
+      handChoice: "/Assets/hand_n.png",
     }
 
     this.onPick = this.onPick.bind(this);
@@ -532,6 +561,21 @@ class App extends Component {
         break;
       case 'shape':
           this.setState({ chosenShape: pick }, () => console.log(this.state.chosenShape));
+          if (this.state.chosenBase.style === 'extensions') {
+            switch (this.state.chosenColour.name) {
+              case 'Snow Queen':
+                  this.setState({ handChoice: pick.e_shape_SQ });
+                break;
+              case 'colour':
+
+                break;
+              case 'shape':
+
+                break;
+              default:
+                console.log('Issue setting ' + pick + 'to the state.');
+            }
+          }
         break;
       default:
         console.log('Issue setting ' + pick + 'to the state.');
@@ -559,7 +603,7 @@ class App extends Component {
                     onPick={this.onPick}
                          />}
                   <button onClick={toggle}>Base</button>
-                  <h1 className="label">1</h1>
+                  {!on && <h1 className="label">1</h1>}
                 </div>
               )}
             </Toggle>
@@ -571,7 +615,7 @@ class App extends Component {
                     onPick={this.onPick}
                          />}
                   <button onClick={toggle}>Colours</button>
-                  <h1 className="label">2</h1>
+                  {!on && <h1 className="label">2</h1>}
                 </div>
               )}
             </Toggle>
@@ -583,7 +627,7 @@ class App extends Component {
                     onPick={this.onPick}
                          />}
                   <button onClick={toggle}>Shape</button>
-                  <h1 className="label">3</h1>
+                  {!on && <h1 className="label">3</h1>}
                 </div>
               )}
             </Toggle>
@@ -597,7 +641,7 @@ class App extends Component {
                     </div>
                   }
                   <button onClick={toggle}>Length</button>
-                  <h1 className="label">4</h1>
+                  {!on && <h1 className="label">4</h1>}
                 </div>
               )}
             </Toggle>
@@ -683,6 +727,7 @@ const Button = ({ onClick, className = '', children }) =>
 
 	    {children}
 	  </button>
+
 
 
 //     class Canvas extends Component {
