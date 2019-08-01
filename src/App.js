@@ -219,6 +219,8 @@ const colourList = [
     name: 'Flirting Again',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/hand_n_flirtingagain.png',
+    handChoiceExtensions: '/Assets/hand_e_flirtingagain.png',
     price: 25,
     objectID: 22,
   },
@@ -226,6 +228,8 @@ const colourList = [
     name: 'Miami',
     class: 'colour',
     hex: '#f6f6f6',
+    handChoiceNatural: '/Assets/hand_n_flirtingagain.png',
+    handChoiceExtensions: '/Assets/hand_e_miami.png',
     price: 25,
     objectID: 23,
   },
@@ -482,6 +486,7 @@ const shapeList = [
     class: 'shape',
     hex: '#FFA500',
     e_shape_SQ: '/Assets/hand_e_snowqueen.png',
+    e_shape_NC: '/Assets/hand_e_nightclub.png',
     price: 10,
     objectID: 0,
   },
@@ -512,6 +517,7 @@ const shapeList = [
     class: 'shape',
     hex: '#b0e0e6',
     e_shape_SQ: '/Assets/hand_e_stiletto_snowqueen.png',
+    e_shape_NC: '/Assets/hand_e_stiletto_nightclub.png',
     price: 20,
     objectID: 5,
   },
@@ -566,11 +572,11 @@ class App extends Component {
               case 'Snow Queen':
                   this.setState({ handChoice: pick.e_shape_SQ });
                 break;
-              case 'colour':
-
+              case 'Nightclub':
+                  this.setState({ handChoice: pick.e_shape_NC });
                 break;
-              case 'shape':
-
+              case 'Rose Gold':
+                  this.setState({ handChoice: pick.e_shape_RG });
                 break;
               default:
                 console.log('Issue setting ' + pick + 'to the state.');
