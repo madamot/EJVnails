@@ -55,6 +55,22 @@ button:focus {
   bottom: 0;
   overflow: scroll;
 }
+@media screen and (max-width: 575px) {
+  .sideBarContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+    border: solid 10px #fff;
+    overflow: auto;
+    white-space: nowrap;
+
+  }
+  div.sideBarContainer .sideBar {
+    display: inline-block;
+  }
+}
 
 .sideBar {
   height: auto;
@@ -68,6 +84,19 @@ button:focus {
 .sideBar, ul {
   list-style: none;
   overflow: scroll;
+}
+@media screen and (max-width: 575px) {
+  .sideBar {
+    width: 50vw;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 0;
+    overflow-y: hidden;
+  }
+  #handPic {
+    height: 455px;
+  }
 }
 
 .label {
@@ -85,6 +114,13 @@ button:focus {
   bottom: 0px;
   position: fixed;
   left: 0;
+}
+@media screen and (max-width: 575px) {
+  .bottomBar {
+    top: 0;
+    border-bottom: solid 10px #fff;
+    border-top: 0;
+  }
 }
 
 .slidecontainer {
@@ -114,7 +150,17 @@ button:focus {
   bottom: 9vh;
   z-index: 0;
   /* background-image: linear-gradient(to bottom right, orange, pink); */
-  border: solid #fff 5px;
+}
+@media screen and (max-width: 575px) {
+  .visualiser {
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    top: 9vh;
+  }
+  #handPic {
+    height: 503px;
+  }
 }
 
 #handPic {
