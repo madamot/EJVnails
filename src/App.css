@@ -60,7 +60,7 @@ ul > li {
 }
 
 .sideBarContainer {
-  height: 90vh;
+  height: 89vh;
   width: 30%;
   bottom: 0;
   overflow: scroll;
@@ -86,7 +86,7 @@ ul > li {
   height: auto;
   overflow: scroll;
   max-height: 50vh;
-  min-height: 20vh;
+  min-height: 33.333%;
   border-bottom: solid 10px #fff;
   border-right: solid 10px #fff;
   margin: auto;
@@ -163,21 +163,42 @@ ul > li {
 }
 @media screen and (max-width: 575px) {
   .visualiser {
-    position: absolute;
-    height: 60vh;
+    bottom: 21.8vh;
+    height: auto;
     width: 100%;
-    top: 9vh;
+
   }
   #handPic {
-    height: 503px;
+    height: 674px;
+    z-index: 0;
   }
 }
 
 #handPic {
   text-align: center;
 }
-@media screen and (min-height: 850px) {
+@media screen and (max-height: 850px) {
   #handPic {
-    height: 900px;
+    height: 550px;
+  }
+}
+@media screen and (max-height: 736px) {
+  #handPic {
+    height: 475px;
+  }
+}
+@media screen and (max-height: 610px) {
+  #handPic {
+    height: 450px;
+  }
+}
+@media screen and (max-height: 575px) {
+  #handPic {
+    height: 430px;
+  }
+}
+@media screen and (max-height: 550px) {
+  #handPic {
+    height: 400px;
   }
 }

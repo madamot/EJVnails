@@ -809,6 +809,7 @@ class App extends Component {
   }
 
   render() {
+    // eslint-disable-next-line
     const { chosenColour, chosenBase, chosenShape, handChoice } = this.state;
 
     return (
@@ -837,7 +838,7 @@ class App extends Component {
                       onPick={this.onPick}
                            />}
                     <button onClick={toggle}>Shape</button>
-                    {!on && <h1 className="label">3</h1>}
+                    {!on && <h1 className="label">2</h1>}
                   </div>
                 )}
               </Toggle>
@@ -850,27 +851,27 @@ class App extends Component {
                     onPick={this.onPick}
                          />}
                   <button onClick={toggle}>Colours</button>
-                  {!on && <h1 className="label">2</h1>}
+                  {!on && <h1 className="label">3</h1>}
                 </div>
               )}
             </Toggle>
-            { this.state.chosenBase.style === 'natural'
+            {/* { this.state.chosenBase.style === 'natural'
               ? null
               :  <Toggle>
                 {({ on, toggle }) => (
-                  <div className="sideBar">
-                    {on &&
-                      <div className="slidecontainer">
-                        <input type="range" onChange={this.onLengthChange} step="1" min="1" max="5" value={this.state.value}></input>
-                        <p>Value: <span id="demo">{this.state.length}</span></p>
-                      </div>
-                    }
-                    <button onClick={toggle}>Length</button>
-                    {!on && <h1 className="label">4</h1>}
-                  </div>
+              <div className="sideBar">
+              {on &&
+              <div className="slidecontainer">
+              <input type="range" onChange={this.onLengthChange} step="1" min="1" max="5" value={this.state.value}></input>
+              <p>Value: <span id="demo">{this.state.length}</span></p>
+              </div>
+              }
+              <button onClick={toggle}>Length</button>
+              {!on && <h1 className="label">4</h1>}
+              </div>
                 )}
               </Toggle>
-            }
+            } */}
           </div>
 
 
@@ -888,23 +889,6 @@ class App extends Component {
               ? <h3 id="total">Total</h3>
               : null
             }
-            {/* <div id="list">
-              <ul>
-                { chosenBase
-              ? <li>{chosenBase.name} > </li>
-              : null
-                }
-                { chosenShape
-              ? <li>{chosenShape.name} > </li>
-              : null
-                }
-                { chosenColour
-              ? <li>{chosenColour.name}</li>
-
-              : null
-                }
-              </ul>
-            </div> */}
           </Cost>
 
         </div>
