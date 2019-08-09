@@ -924,7 +924,7 @@ class Visualise extends Component {
     const { display } = this.props;
     return (
       <div className="visualiser">
-        <img src={ display } id="handPic" height="750px" alt="hand-plain"/>
+        <img src={ display } id="handPic" height="900px" alt="hand-plain"/>
 
       </div>
     );
