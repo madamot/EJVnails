@@ -17,6 +17,16 @@ button:focus {
   outline: 0;
 }
 
+ul > li {
+  display: inline-block;
+}
+
+#list {
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
+
 .colBox {
   margin: 20px;
   padding: 15px;
@@ -76,7 +86,7 @@ button:focus {
   height: auto;
   overflow: scroll;
   max-height: 50vh;
-  min-height: 22.5vh;
+  min-height: 20vh;
   border-bottom: solid 10px #fff;
   border-right: solid 10px #fff;
   margin: auto;
@@ -165,4 +175,9 @@ button:focus {
 
 #handPic {
   text-align: center;
+}
+@media screen and (min-height: 850px) {
+  #handPic {
+    height: 900px;
+  }
 }

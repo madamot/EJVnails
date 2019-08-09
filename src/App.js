@@ -216,7 +216,7 @@ const colourList = [
     name: 'Pink Panther',
     class: 'colour',
     hex: '#f0a9d2',
-    natural: '/Assets/naturals_snowqueen.png',
+    natural: '/Assets/hand_n_pinkpanther.png',
     square: '/Assets/hand_e_pinkpanther_square.png',
     round: '/Assets/hand_e_pinkpanther_round.png',
     stiletto: '/Assets/hand_e_pinkpanther_stiletto.png',
@@ -227,7 +227,7 @@ const colourList = [
     name: 'Waterlilly',
     class: 'colour',
     hex: '#eb637b',
-    natural: '/Assets/naturals_snowqueen.png',
+    natural: '/Assets/hand_n_waterlilly.png',
     square: '/Assets/hand_e_waterlilly_square.png',
     round: '/Assets/hand_e_waterlilly_round.png',
     stiletto: '/Assets/hand_e_waterlilly_stiletto.png',
@@ -238,7 +238,7 @@ const colourList = [
     name: 'Gilly',
     class: 'colour',
     hex: '#e860a0',
-    natural: '/Assets/naturals_snowqueen.png',
+    natural: '/Assets/hand_n_gilly.png',
     square: '/Assets/hand_e_gilly_square.png',
     round: '/Assets/hand_e_gilly_round.png',
     stiletto: '/Assets/hand_e_gilly_stiletto.png',
@@ -249,7 +249,7 @@ const colourList = [
     name: 'Angel Wing',
     class: 'colour',
     hex: '#e04053',
-    natural: '/Assets/naturals_snowqueen.png',
+    natural: '/Assets/hand_n_angelwing.png',
     square: '/Assets/hand_e_angelwing_square.png',
     round: '/Assets/hand_e_angelwing_round.png',
     stiletto: '/Assets/hand_e_angelwing_stiletto.png',
@@ -271,7 +271,7 @@ const colourList = [
     name: 'Miami',
     class: 'colour',
     hex: '#c13492',
-    natural: '/Assets/hand_n_flirtingagain.png',
+    natural: '/Assets/hand_n_miami.png',
     square: '/Assets/hand_e_miami_square.png',
     round: '/Assets/hand_e_miami_round.png',
     stiletto: '/Assets/hand_e_miami_stiletto.png',
@@ -281,7 +281,7 @@ const colourList = [
   {
     name: 'Hot Lips',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#df4928',
     natural: '/Assets/hand_n_hotlips.png',
     square: '/Assets/hand_e_hotlips_square.png',
     round: '/Assets/hand_e_hotlips_round.png',
@@ -292,7 +292,7 @@ const colourList = [
   {
     name: 'Twiggy',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#ec6251',
     natural: '/Assets/hand_n_twiggy.png',
     square: '/Assets/hand_e_twiggy_square.png',
     round: '/Assets/hand_e_twiggy_round.png',
@@ -303,7 +303,7 @@ const colourList = [
   {
     name: 'Peach',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#f19f79',
     natural: '/Assets/hand_n_peach.png',
     square: '/Assets/hand_e_peach_square.png',
     round: '/Assets/hand_e_peach_round.png',
@@ -314,7 +314,7 @@ const colourList = [
   {
     name: 'Coral Touch',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#f0a191',
     natural: '/Assets/hand_n_coraltouch.png',
     square: '/Assets/hand_e_coraltouch_square.png',
     round: '/Assets/hand_e_coraltouch_round.png',
@@ -325,7 +325,7 @@ const colourList = [
   {
     name: 'Sunshine',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#ec8f90',
     natural: '/Assets/hand_n_sunshine.png',
     square: '/Assets/hand_e_sunshine_square.png',
     round: '/Assets/hand_e_sunshine_round.png',
@@ -336,7 +336,7 @@ const colourList = [
   {
     name: 'Orange Princess',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#f4ba70',
     natural: '/Assets/hand_n_orangeprincess.png',
     square: '/Assets/hand_e_orangeprincess_square.png',
     round: '/Assets/hand_e_orangeprincess_round.png',
@@ -347,7 +347,7 @@ const colourList = [
   {
     name: 'Peach Daiquiri',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#f1a073',
     natural: '/Assets/hand_n_peachdaiquiri.png',
     square: '/Assets/hand_e_peachdaiquiri_square.png',
     round: '/Assets/hand_e_peachdaiquiri_round.png',
@@ -358,7 +358,7 @@ const colourList = [
   {
     name: 'Pastel v005',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#cac3d7',
     natural: '/Assets/hand_n_pastelv005.png',
     square: '/Assets/hand_e_pastelv005_square.png',
     round: '/Assets/hand_e_pastelv005_round.png',
@@ -369,7 +369,7 @@ const colourList = [
   {
     name: 'Pastel v082',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#b9d8d3',
     natural: '/Assets/hand_n_pastelv082.png',
     square: '/Assets/hand_e_pastelv082_square.png',
     round: '/Assets/hand_e_pastelv082_round.png',
@@ -380,7 +380,7 @@ const colourList = [
   {
     name: 'Blue Marine',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#b4cdde',
     natural: '/Assets/hand_n_bluemarine.png',
     square: '/Assets/hand_e_bluemarine_square.png',
     round: '/Assets/hand_e_bluemarine_round.png',
@@ -391,7 +391,7 @@ const colourList = [
   {
     name: 'Michelle',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#b4cdde',
     natural: '/Assets/hand_n_michelle.png',
     square: '/Assets/hand_e_michelle_square.png',
     round: '/Assets/hand_e_michelle_round.png',
@@ -402,7 +402,7 @@ const colourList = [
   {
     name: 'Pastel v110',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#ebdca8',
     natural: '/Assets/hand_n_pastelv110.png',
     square: '/Assets/hand_e_pastelv110_square.png',
     round: '/Assets/hand_e_pastelv110_round.png',
@@ -413,7 +413,7 @@ const colourList = [
   {
     name: 'Serena',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#adda8b',
     natural: '/Assets/hand_n_serena.png',
     square: '/Assets/hand_e_serena_square.png',
     round: '/Assets/hand_e_serena_round.png',
@@ -424,7 +424,7 @@ const colourList = [
   {
     name: 'Candy',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#c73727',
     natural: '/Assets/hand_n_candy.png',
     square: '/Assets/hand_e_candy_square.png',
     round: '/Assets/hand_e_candy_round.png',
@@ -435,7 +435,7 @@ const colourList = [
   {
     name: 'Crimson Charm',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#cf544e',
     natural: '/Assets/hand_n_crimsoncharm.png',
     square: '/Assets/hand_e_crimsoncharm_square.png',
     round: '/Assets/hand_e_crimsoncharm_round.png',
@@ -446,7 +446,7 @@ const colourList = [
   {
     name: 'Belladonna',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#8b3b36',
     natural: '/Assets/hand_n_belladonna.png',
     square: '/Assets/hand_e_belladonna_square.png',
     round: '/Assets/hand_e_belladonna_round.png',
@@ -457,7 +457,7 @@ const colourList = [
   {
     name: 'Bonfire',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#913835',
     natural: '/Assets/hand_n_bonfire.png',
     square: '/Assets/hand_e_bonfire_square.png',
     round: '/Assets/hand_e_bonfire_round.png',
@@ -468,7 +468,7 @@ const colourList = [
   {
     name: 'Velvet Red',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#553c3a',
     natural: '/Assets/hand_n_velvetred.png',
     square: '/Assets/hand_e_velvetred_square.png',
     round: '/Assets/hand_e_velvetred_round.png',
@@ -479,7 +479,7 @@ const colourList = [
   {
     name: 'Jam',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#662e28',
     natural: '/Assets/hand_n_jam.png',
     square: '/Assets/hand_e_jam_square.png',
     round: '/Assets/hand_e_jam_round.png',
@@ -490,7 +490,7 @@ const colourList = [
   {
     name: 'Cacao',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#84615f',
     natural: '/Assets/hand_n_cacao.png',
     square: '/Assets/hand_e_cacao_square.png',
     round: '/Assets/hand_e_cacao_round.png',
@@ -501,7 +501,7 @@ const colourList = [
   {
     name: 'Impulsive',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#ad7878',
     natural: '/Assets/hand_n_impulsive.png',
     square: '/Assets/hand_e_impulsive_square.png',
     round: '/Assets/hand_e_impulsive_round.png',
@@ -512,7 +512,7 @@ const colourList = [
   {
     name: 'Deepest Mauve',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#8f7b78',
     natural: '/Assets/hand_n_deepestmauve.png',
     square: '/Assets/hand_e_deepestmauve_square.png',
     round: '/Assets/hand_e_deepestmauve_round.png',
@@ -523,7 +523,7 @@ const colourList = [
   {
     name: 'Berrylicious',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#9f5468',
     natural: '/Assets/hand_n_berrylicious.png',
     square: '/Assets/hand_e_berrylicious_square.png',
     round: '/Assets/hand_e_berrylicious_round.png',
@@ -534,7 +534,7 @@ const colourList = [
   {
     name: 'Cosmos',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#dbbac2',
     natural: '/Assets/hand_n_cosmos.png',
     square: '/Assets/hand_e_cosmos_square.png',
     round: '/Assets/hand_e_cosmos_round.png',
@@ -545,7 +545,7 @@ const colourList = [
   {
     name: 'Heartless',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#794055',
     natural: '/Assets/hand_n_heartless.png',
     square: '/Assets/hand_e_heartless_square.png',
     round: '/Assets/hand_e_heartless_round.png',
@@ -556,7 +556,7 @@ const colourList = [
   {
     name: 'N094',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#d5d4e1',
     natural: '/Assets/hand_n_n094.png',
     square: '/Assets/hand_e_n094_square.png',
     round: '/Assets/hand_e_n094_round.png',
@@ -567,7 +567,7 @@ const colourList = [
   {
     name: 'Brittany',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#888f91',
     natural: '/Assets/hand_n_brittany.png',
     square: '/Assets/hand_e_brittany_square.png',
     round: '/Assets/hand_e_brittany_round.png',
@@ -578,7 +578,7 @@ const colourList = [
   {
     name: 'Shadow',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#898a8d',
     natural: '/Assets/hand_n_shadow.png',
     square: '/Assets/hand_e_shadow_square.png',
     round: '/Assets/hand_e_shadow_round.png',
@@ -589,7 +589,7 @@ const colourList = [
   {
     name: 'Jumanji',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#acbba9',
     natural: '/Assets/hand_n_jumanji.png',
     square: '/Assets/hand_e_jumanji_square.png',
     round: '/Assets/hand_e_jumanji_round.png',
@@ -611,7 +611,7 @@ const colourList = [
   {
     name: 'Jungle',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#3b5253',
     natural: '/Assets/hand_n_jungle.png',
     square: '/Assets/hand_e_jungle_square.png',
     round: '/Assets/hand_e_jungle_round.png',
@@ -622,7 +622,7 @@ const colourList = [
   {
     name: 'Galaxy',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#514f5d',
     natural: '/Assets/hand_n_galaxy.png',
     square: '/Assets/hand_e_galaxy_square.png',
     round: '/Assets/hand_e_galaxy_round.png',
@@ -633,7 +633,7 @@ const colourList = [
   {
     name: 'Royal Navy',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#393e4b',
     natural: '/Assets/hand_n_royalnavy.png',
     square: '/Assets/hand_e_royalnavy_square.png',
     round: '/Assets/hand_e_royalnavy_round.png',
@@ -644,7 +644,7 @@ const colourList = [
   {
     name: 'Nightfall',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#3a3d43',
     natural: '/Assets/hand_n_nightfall.png',
     square: '/Assets/hand_e_nightfall_square.png',
     round: '/Assets/hand_e_nightfall_round.png',
@@ -655,7 +655,7 @@ const colourList = [
   {
     name: 'Jet Black',
     class: 'colour',
-    hex: '#f6f6f6',
+    hex: '#141513',
     natural: '/Assets/hand_n_jetblack.png',
     square: '/Assets/hand_e_jetblack_square.png',
     round: '/Assets/hand_e_jetblack_round.png',
@@ -673,7 +673,7 @@ const shapeList = [
     standard: '/Assets/hand_e1.png',
     e_shape_SQ: '/Assets/hand_e_snowqueen.png',
     e_shape_NC: '/Assets/hand_e_nightclub.png',
-    price: 10,
+    price: 0,
     objectID: 0,
   },
   {
@@ -682,7 +682,7 @@ const shapeList = [
     hex: '#b0e0e6',
     standard: '/Assets/hand_e_round.png',
     e_shape_SQ: '/Assets/hand_e_round_snowqueen.png',
-    price: 20,
+    price: 0,
     objectID: 1,
   },
   // {
@@ -706,7 +706,7 @@ const shapeList = [
     standard: '/Assets/hand_e_stiletto.png',
     e_shape_SQ: '/Assets/hand_e_stiletto_snowqueen.png',
     e_shape_NC: '/Assets/hand_e_stiletto_nightclub.png',
-    price: 20,
+    price: 0,
     objectID: 5,
   },
   // {
@@ -727,10 +727,13 @@ class App extends Component {
     this.state = {
       baseList: baseList,
       chosenBase: "",
+      basePrice: 0,
       colourList: colourList,
       chosenColour: "",
+      colourPrice: 0,
       shapeList: shapeList,
       chosenShape: "",
+      shapePrice: 0,
       length: "",
       handChoice: "/Assets/hand_n.png",
     }
@@ -742,80 +745,64 @@ class App extends Component {
   onPick(pick) {
     switch (pick.class) {
       case 'base':
-          this.setState({ chosenBase: pick, handChoice: pick.handChoice }, () => console.log(this.state.chosenBase));
+          this.setState({ chosenBase: pick, handChoice: pick.handChoice, basePrice: pick.price }, () => console.log(this.state.chosenBase));
+          if (this.state.chosenColour) {
+            if (this.state.chosenBase.name === 'Extensions') {
+              this.setState({ handChoice: this.state.chosenColour.natural, basePrice: pick.price });
+            }
+            else if (this.state.chosenBase.name === 'On Naturals') {
+              this.setState({ handChoice: this.state.chosenColour.square, basePrice: pick.price });
+            }
+          }
         break;
       case 'shape':
-          this.setState({ chosenShape: pick }, () => console.log(this.state.chosenShape));
+          this.setState({ chosenShape: pick, shapePrice: pick.price }, () => console.log(this.state.chosenShape));
           if (this.state.chosenBase.style === 'extensions') {
-            this.setState({ handChoice: pick.standard }, () => console.log(this.state.handChoice));
+            this.setState({ handChoice: pick.standard, shapePrice: pick.price }, () => console.log(this.state.handChoice));
+            if (this.state.chosenColour) {
+              switch (pick.name) {
+                case 'Square':
+                    this.setState({ handChoice: this.state.chosenColour.square, shapePrice: pick.price });
+                  break;
+                case 'Round':
+                    this.setState({ handChoice: this.state.chosenColour.round, shapePrice: pick.price });
+                  break;
+                case 'Stiletto':
+                    this.setState({ handChoice: this.state.chosenColour.stiletto, shapePrice: pick.price });
+                  break;
+                default:
+                  console.log('Issue setting ' + pick + 'to the state.');
+              }
+            }
           } else if (this.state.chosenBase.style === 'natural') {
-            this.setState({ handChoice: pick.natural }, () => console.log(this.state.handChoice));
+            this.setState({ handChoice: pick.natural, shapePrice: pick.price }, () => console.log(this.state.handChoice));
           }
         break;
       case 'colour':
-      this.setState({ chosenColour: pick }, () => console.log(this.state.chosenShape));
+      this.setState({ chosenColour: pick, colourPrice: pick.price }, () => console.log(this.state.chosenShape));
         if (this.state.chosenBase.style === 'extensions') {
           switch (this.state.chosenShape.name) {
             case 'Square':
-                this.setState({ handChoice: pick.square });
+                this.setState({ handChoice: pick.square, colourPrice: pick.price });
               break;
             case 'Round':
-                this.setState({ handChoice: pick.round });
+                this.setState({ handChoice: pick.round, colourPrice: pick.price });
               break;
             case 'Stiletto':
-                this.setState({ handChoice: pick.stiletto });
+                this.setState({ handChoice: pick.stiletto, colourPrice: pick.price });
               break;
             default:
               console.log('Issue setting ' + pick + 'to the state.');
           }
         }
         else {
-          this.setState({ handChoice: pick.natural });
+          this.setState({ handChoice: pick.natural, colourPrice: pick.price });
         }
         break;
       default:
         console.log('Issue setting ' + pick + 'to the state.');
     }
   }
-
-  // onPick(pick) {
-  //   switch (pick.class) {
-  //     case 'base':
-  //         this.setState({ chosenBase: pick, handChoice: pick.handChoice }, () => console.log(this.state.chosenBase));
-  //       break;
-  //     case 'colour':
-  //         this.setState({ chosenColour: pick }, () => console.log(this.state.chosenColour));
-  //         if (this.state.chosenBase.style === 'extensions') {
-  //           this.setState({ handChoice: pick.handChoiceExtensions }, () => console.log(this.state.handChoice));
-  //         } else if (this.state.chosenBase.style === 'natural') {
-  //           this.setState({ handChoice: pick.handChoiceNatural }, () => console.log(this.state.handChoice));
-  //         }
-  //
-  //       break;
-  //     case 'shape':
-  //         this.setState({ chosenShape: pick }, () => console.log(this.state.chosenShape));
-  //         if (this.state.chosenBase.style === 'extensions') {
-  //           switch (this.state.chosenColour.name) {
-  //             case 'Snow Queen':
-  //                 this.setState({ handChoice: pick.e_shape_SQ });
-  //               break;
-  //             case 'Nightclub':
-  //                 this.setState({ handChoice: pick.e_shape_NC });
-  //               break;
-  //             case 'Rose Gold':
-  //                 this.setState({ handChoice: pick.e_shape_RG });
-  //               break;
-  //             default:
-  //               console.log('Issue setting ' + pick + 'to the state.');
-  //           }
-  //         }
-  //       break;
-  //     default:
-  //       console.log('Issue setting ' + pick + 'to the state.');
-  //   }
-  //
-  //   // CREATE A NEW LOCAL STATE OF PRICE, THEN IN THIS PICK FUNCTION PUT THE SELECTED OBJECTS PRICE IN THE PRICE STATE. ALSO ADD A IF STATEMENT IN THIS FUNCTION, TO DIFFERENTIATE BETWEEN A COLOUR CHOICE AND THE BASE CHOICE
-  // }
 
   onLengthChange(event) {
     this.setState({ length: event.target.value }, () => console.log(this.state.length));
@@ -896,11 +883,28 @@ class App extends Component {
 
 
 
-          <Cost price={chosenBase.price + chosenColour.price + chosenShape.price}>
+          <Cost price={this.state.basePrice + this.state.shapePrice + this.state.colourPrice}>
             { chosenBase
               ? <h3 id="total">Total</h3>
               : null
             }
+            {/* <div id="list">
+              <ul>
+                { chosenBase
+              ? <li>{chosenBase.name} > </li>
+              : null
+                }
+                { chosenShape
+              ? <li>{chosenShape.name} > </li>
+              : null
+                }
+                { chosenColour
+              ? <li>{chosenColour.name}</li>
+
+              : null
+                }
+              </ul>
+            </div> */}
           </Cost>
 
         </div>
@@ -966,40 +970,6 @@ const Button = ({ onClick, className = '', children }) =>
 
 	    {children}
 	  </button>
-
-
-
-//     class Canvas extends Component {
-//
-// componentDidMount() {
-//     this.updateCanvas();
-// }
-//
-// updateCanvas() {
-//     const ctx = this.refs.canvas.getContext('2d');
-//
-//     const imageObj1 = new Image();
-//     imageObj1.src = {hand};
-//     console.log(imageObj1);
-//
-//     imageObj1.onload = function() {
-//         ctx.drawImage(imageObj1,0,0);
-//
-// }
-//
-// }
-// render() {
-//     return (
-//
-//
-//         <canvas ref="canvas" width={300} height={900}> </canvas>
-//
-//     );
-//  }
-// };
-
-
-
 
 
 export default App;
