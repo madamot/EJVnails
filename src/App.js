@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import logo from './logo.svg';
 import Toggle from './Toggle';
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-145398669-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const baseList = [
   {
