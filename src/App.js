@@ -913,7 +913,7 @@ class Table extends Component {
             <span>
               <br/>{pick.name}
               <br/>
-              <br/>£{pick.price}
+              {/* <br/>£{pick.price} */}
             </span>
           </Button>
         )}
@@ -928,7 +928,6 @@ class Visualise extends Component {
     return (
       <div className="visualiser">
         <img src={ display } id="handPic" height="900px" alt="hand-plain"/>
-
       </div>
     );
   }
@@ -940,9 +939,12 @@ class Cost extends Component {
     return (
       <div className="bottomBar">
         <div id="price">
-          {children}£{price}
+          {/* {children}£{price} */}
         </div>
-        <img src={logo} id="logo" width="75em" alt="logo"/>
+        <a href="https://www.instagram.com/ejvnails/">
+          <img src={logo} id="logo" width="75em" alt="logo"/>
+        </a>
+        <p id="promo">Like what you've created? See more of my work over on my <a href="https://www.instagram.com/ejvnails/">Instagram!</a> Or contact me on 07951476008 for more details and to book an appointment!</p>
       </div>
     );
   }
