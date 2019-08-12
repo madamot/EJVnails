@@ -600,17 +600,17 @@ const colourList = [
     price: 25,
     objectID: 52,
   },
-  {
-    name: 'Thermo 4',
-    class: 'colour',
-    hex: '#f6f6f6',
-    natural: '/Assets/hand_n_thermo4.png',
-    square: '/Assets/hand_e_thermo4_square.png',
-    round: '/Assets/hand_e_thermo4_round.png',
-    stiletto: '/Assets/hand_e_thermo4_stiletto.png',
-    price: 25,
-    objectID: 53,
-  },
+  // {
+  //   name: 'Thermo 4',
+  //   class: 'colour',
+  //   hex: '#f6f6f6',
+  //   natural: '/Assets/hand_n_thermo4.png',
+  //   square: '/Assets/hand_e_thermo4_square.png',
+  //   round: '/Assets/hand_e_thermo4_round.png',
+  //   stiletto: '/Assets/hand_e_thermo4_stiletto.png',
+  //   price: 25,
+  //   objectID: 53,
+  // },
   {
     name: 'Jungle',
     class: 'colour',
@@ -944,7 +944,7 @@ class Cost extends Component {
         <a href="https://www.instagram.com/ejvnails/">
           <img src={logo} id="logo" width="75em" alt="logo"/>
         </a>
-        <p id="promo">Like what you've created? See more of my work over on my <a href="https://www.instagram.com/ejvnails/">Instagram!</a> Or contact me on 07951476008 for more details and to book an appointment!</p>
+        {/* <p id="promo">Like what you've created? See more of my work over on my <a href="https://www.instagram.com/ejvnails/">Instagram!</a> Or contact me on 07951476008 for more details and to book an appointment!</p> */}
       </div>
     );
   }
