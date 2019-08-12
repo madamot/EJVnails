@@ -913,7 +913,7 @@ class Table extends Component {
             <span>
               <br/>{pick.name}
               <br/>
-              {/* <br/>£{pick.price} */}
+              <br/>£{pick.price}
             </span>
           </Button>
         )}
@@ -939,7 +939,7 @@ class Cost extends Component {
     return (
       <div className="bottomBar">
         <div id="price">
-          {/* {children}£{price} */}
+          {children}£{price}
         </div>
         <a href="https://www.instagram.com/ejvnails/">
           <img src={logo} id="logo" width="75em" alt="logo"/>
