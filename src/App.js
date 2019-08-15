@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Home from './components/Home';
+import Home from './components/Home/Home.js';
 import Contact from './components/Contact';
-import Customiser from './components/Customiser';
+import Customiser from './components/Customiser/Customiser.js';
 
 
 

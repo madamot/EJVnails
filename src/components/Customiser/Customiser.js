@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../App.css';
-import logo from '../logo.svg';
-import Toggle from '../Toggle';
+import './Customiser.css';
+import logoApp from '../../logo.svg';
+import Toggle from '../../Toggle';
 import ReactGA from 'react-ga';
 import { NavLink } from "react-router-dom";
 ReactGA.initialize('UA-145398669-1');
@@ -174,7 +174,7 @@ const colourList = [
     objectID: 12,
   },
   {
-    name: 'Baby',
+    name: 'French Bloom',
     class: 'colour',
     hex: '#dcadbe',
     natural: '/Assets/hand_n_baby.png',
@@ -185,6 +185,28 @@ const colourList = [
     objectID: 13,
   },
   {
+    name: 'Baby',
+    class: 'colour',
+    hex: '#dcadbe',
+    natural: '/Assets/hand_n_baby.png',
+    square: '/Assets/hand_e_baby_square.png',
+    round: '/Assets/hand_e_baby_round.png',
+    stiletto: '/Assets/hand_e_baby_stiletto.png',
+    price: 25,
+    objectID: 14,
+  },
+  {
+    name: 'Biab 18',
+    class: 'colour',
+    hex: '#dcadbe',
+    natural: '/Assets/hand_n_baby.png',
+    square: '/Assets/hand_e_baby_square.png',
+    round: '/Assets/hand_e_baby_round.png',
+    stiletto: '/Assets/hand_e_baby_stiletto.png',
+    price: 25,
+    objectID: 15,
+  },
+  {
     name: 'June',
     class: 'colour',
     hex: '#e7cfe2',
@@ -193,7 +215,7 @@ const colourList = [
     round: '/Assets/hand_e_june_round.png',
     stiletto: '/Assets/hand_e_june_stiletto.png',
     price: 25,
-    objectID: 14,
+    objectID: 16,
   },
   {
     name: 'Marilyn',
@@ -204,7 +226,7 @@ const colourList = [
     round: '/Assets/hand_e_marilyn_round.png',
     stiletto: '/Assets/hand_e_marilyn_stiletto.png',
     price: 25,
-    objectID: 15,
+    objectID: 17,
   },
   {
     name: 'Hollywood Star',
@@ -215,7 +237,7 @@ const colourList = [
     round: '/Assets/hand_e_hollywoodstar_round.png',
     stiletto: '/Assets/hand_e_hollywoodstar_stiletto.png',
     price: 25,
-    objectID: 16,
+    objectID: 18,
   },
   {
     name: 'Pink Panther',
@@ -226,7 +248,7 @@ const colourList = [
     round: '/Assets/hand_e_pinkpanther_round.png',
     stiletto: '/Assets/hand_e_pinkpanther_stiletto.png',
     price: 25,
-    objectID: 17,
+    objectID: 19,
   },
   {
     name: 'Waterlilly',
@@ -237,7 +259,7 @@ const colourList = [
     round: '/Assets/hand_e_waterlilly_round.png',
     stiletto: '/Assets/hand_e_waterlilly_stiletto.png',
     price: 25,
-    objectID: 18,
+    objectID: 20,
   },
   {
     name: 'Gilly',
@@ -248,7 +270,7 @@ const colourList = [
     round: '/Assets/hand_e_gilly_round.png',
     stiletto: '/Assets/hand_e_gilly_stiletto.png',
     price: 25,
-    objectID: 19,
+    objectID: 21,
   },
   {
     name: 'Angel Wing',
@@ -259,7 +281,7 @@ const colourList = [
     round: '/Assets/hand_e_angelwing_round.png',
     stiletto: '/Assets/hand_e_angelwing_stiletto.png',
     price: 25,
-    objectID: 21,
+    objectID: 22,
   },
   {
     name: 'Flirting Again',
@@ -270,7 +292,18 @@ const colourList = [
     round: '/Assets/hand_e_flirtingagain_round.png',
     stiletto: '/Assets/hand_e_flirtingagain_stiletto.png',
     price: 25,
-    objectID: 22,
+    objectID: 23,
+  },
+  {
+    name: 'Venus',
+    class: 'colour',
+    hex: '#892678',
+    natural: '/Assets/hand_n_flirtingagain.png',
+    square: '/Assets/hand_e_flirtingagain_square.png',
+    round: '/Assets/hand_e_flirtingagain_round.png',
+    stiletto: '/Assets/hand_e_flirtingagain_stiletto.png',
+    price: 25,
+    objectID: 24,
   },
   {
     name: 'Miami',
@@ -281,7 +314,7 @@ const colourList = [
     round: '/Assets/hand_e_miami_round.png',
     stiletto: '/Assets/hand_e_miami_stiletto.png',
     price: 25,
-    objectID: 23,
+    objectID: 25,
   },
   {
     name: 'Hot Lips',
@@ -292,7 +325,7 @@ const colourList = [
     round: '/Assets/hand_e_hotlips_round.png',
     stiletto: '/Assets/hand_e_hotlips_stiletto.png',
     price: 25,
-    objectID: 24,
+    objectID: 26,
   },
   {
     name: 'Twiggy',
@@ -303,7 +336,7 @@ const colourList = [
     round: '/Assets/hand_e_twiggy_round.png',
     stiletto: '/Assets/hand_e_twiggy_stiletto.png',
     price: 25,
-    objectID: 25,
+    objectID: 27,
   },
   {
     name: 'Peach',
@@ -314,7 +347,7 @@ const colourList = [
     round: '/Assets/hand_e_peach_round.png',
     stiletto: '/Assets/hand_e_peach_stiletto.png',
     price: 25,
-    objectID: 26,
+    objectID: 28,
   },
   {
     name: 'Coral Touch',
@@ -325,7 +358,7 @@ const colourList = [
     round: '/Assets/hand_e_coraltouch_round.png',
     stiletto: '/Assets/hand_e_coraltouch_stiletto.png',
     price: 25,
-    objectID: 27,
+    objectID: 29,
   },
   {
     name: 'Sunshine',
@@ -336,7 +369,7 @@ const colourList = [
     round: '/Assets/hand_e_sunshine_round.png',
     stiletto: '/Assets/hand_e_sunshine_stiletto.png',
     price: 25,
-    objectID: 28,
+    objectID: 30,
   },
   {
     name: 'Orange Princess',
@@ -347,7 +380,7 @@ const colourList = [
     round: '/Assets/hand_e_orangeprincess_round.png',
     stiletto: '/Assets/hand_e_orangeprincess_stiletto.png',
     price: 25,
-    objectID: 29,
+    objectID: 31,
   },
   {
     name: 'Peach Daiquiri',
@@ -358,7 +391,7 @@ const colourList = [
     round: '/Assets/hand_e_peachdaiquiri_round.png',
     stiletto: '/Assets/hand_e_peachdaiquiri_stiletto.png',
     price: 25,
-    objectID: 30,
+    objectID: 32,
   },
   {
     name: 'Pastel v005',
@@ -369,7 +402,7 @@ const colourList = [
     round: '/Assets/hand_e_pastelv005_round.png',
     stiletto: '/Assets/hand_e_pastelv005_stiletto.png',
     price: 25,
-    objectID: 31,
+    objectID: 33,
   },
   {
     name: 'Pastel v082',
@@ -380,7 +413,7 @@ const colourList = [
     round: '/Assets/hand_e_pastelv082_round.png',
     stiletto: '/Assets/hand_e_pastelv082_stiletto.png',
     price: 25,
-    objectID: 32,
+    objectID: 34,
   },
   {
     name: 'Blue Marine',
@@ -391,7 +424,7 @@ const colourList = [
     round: '/Assets/hand_e_bluemarine_round.png',
     stiletto: '/Assets/hand_e_bluemarine_stiletto.png',
     price: 25,
-    objectID: 33,
+    objectID: 35,
   },
   {
     name: 'Michelle',
@@ -402,7 +435,7 @@ const colourList = [
     round: '/Assets/hand_e_michelle_round.png',
     stiletto: '/Assets/hand_e_michelle_stiletto.png',
     price: 25,
-    objectID: 34,
+    objectID: 36,
   },
   {
     name: 'Pastel v110',
@@ -413,7 +446,18 @@ const colourList = [
     round: '/Assets/hand_e_pastelv110_round.png',
     stiletto: '/Assets/hand_e_pastelv110_stiletto.png',
     price: 25,
-    objectID: 35,
+    objectID: 37,
+  },
+  {
+    name: 'Mustard',
+    class: 'colour',
+    hex: '#ebdca8',
+    natural: '/Assets/hand_n_pastelv110.png',
+    square: '/Assets/hand_e_pastelv110_square.png',
+    round: '/Assets/hand_e_pastelv110_round.png',
+    stiletto: '/Assets/hand_e_pastelv110_stiletto.png',
+    price: 25,
+    objectID: 38,
   },
   {
     name: 'Serena',
@@ -424,7 +468,7 @@ const colourList = [
     round: '/Assets/hand_e_serena_round.png',
     stiletto: '/Assets/hand_e_serena_stiletto.png',
     price: 25,
-    objectID: 36,
+    objectID: 39,
   },
   {
     name: 'Candy',
@@ -435,7 +479,7 @@ const colourList = [
     round: '/Assets/hand_e_candy_round.png',
     stiletto: '/Assets/hand_e_candy_stiletto.png',
     price: 25,
-    objectID: 37,
+    objectID: 40,
   },
   {
     name: 'Crimson Charm',
@@ -446,7 +490,7 @@ const colourList = [
     round: '/Assets/hand_e_crimsoncharm_round.png',
     stiletto: '/Assets/hand_e_crimsoncharm_stiletto.png',
     price: 25,
-    objectID: 38,
+    objectID: 41,
   },
   {
     name: 'Belladonna',
@@ -457,7 +501,7 @@ const colourList = [
     round: '/Assets/hand_e_belladonna_round.png',
     stiletto: '/Assets/hand_e_belladonna_stiletto.png',
     price: 25,
-    objectID: 39,
+    objectID: 42,
   },
   {
     name: 'Bonfire',
@@ -468,7 +512,7 @@ const colourList = [
     round: '/Assets/hand_e_bonfire_round.png',
     stiletto: '/Assets/hand_e_bonfire_stiletto.png',
     price: 25,
-    objectID: 40,
+    objectID: 43,
   },
   {
     name: 'Velvet Red',
@@ -479,7 +523,7 @@ const colourList = [
     round: '/Assets/hand_e_velvetred_round.png',
     stiletto: '/Assets/hand_e_velvetred_stiletto.png',
     price: 25,
-    objectID: 41,
+    objectID: 44,
   },
   {
     name: 'Jam',
@@ -490,7 +534,7 @@ const colourList = [
     round: '/Assets/hand_e_jam_round.png',
     stiletto: '/Assets/hand_e_jam_stiletto.png',
     price: 25,
-    objectID: 42,
+    objectID: 45,
   },
   {
     name: 'Cacao',
@@ -501,7 +545,7 @@ const colourList = [
     round: '/Assets/hand_e_cacao_round.png',
     stiletto: '/Assets/hand_e_cacao_stiletto.png',
     price: 25,
-    objectID: 43,
+    objectID: 46,
   },
   {
     name: 'Impulsive',
@@ -512,7 +556,7 @@ const colourList = [
     round: '/Assets/hand_e_impulsive_round.png',
     stiletto: '/Assets/hand_e_impulsive_stiletto.png',
     price: 25,
-    objectID: 44,
+    objectID: 47,
   },
   {
     name: 'Deepest Mauve',
@@ -523,7 +567,7 @@ const colourList = [
     round: '/Assets/hand_e_deepestmauve_round.png',
     stiletto: '/Assets/hand_e_deepestmauve_stiletto.png',
     price: 25,
-    objectID: 45,
+    objectID: 48,
   },
   {
     name: 'Berrylicious',
@@ -534,7 +578,7 @@ const colourList = [
     round: '/Assets/hand_e_berrylicious_round.png',
     stiletto: '/Assets/hand_e_berrylicious_stiletto.png',
     price: 25,
-    objectID: 46,
+    objectID: 49,
   },
   {
     name: 'Cosmos',
@@ -545,7 +589,7 @@ const colourList = [
     round: '/Assets/hand_e_cosmos_round.png',
     stiletto: '/Assets/hand_e_cosmos_stiletto.png',
     price: 25,
-    objectID: 47,
+    objectID: 50,
   },
   {
     name: 'Heartless',
@@ -556,7 +600,7 @@ const colourList = [
     round: '/Assets/hand_e_heartless_round.png',
     stiletto: '/Assets/hand_e_heartless_stiletto.png',
     price: 25,
-    objectID: 48,
+    objectID: 51,
   },
   {
     name: 'N094',
@@ -567,7 +611,7 @@ const colourList = [
     round: '/Assets/hand_e_n094_round.png',
     stiletto: '/Assets/hand_e_n094_stiletto.png',
     price: 25,
-    objectID: 49,
+    objectID: 52,
   },
   {
     name: 'Brittany',
@@ -578,7 +622,7 @@ const colourList = [
     round: '/Assets/hand_e_brittany_round.png',
     stiletto: '/Assets/hand_e_brittany_stiletto.png',
     price: 25,
-    objectID: 50,
+    objectID: 53,
   },
   {
     name: 'Shadow',
@@ -589,7 +633,7 @@ const colourList = [
     round: '/Assets/hand_e_shadow_round.png',
     stiletto: '/Assets/hand_e_shadow_stiletto.png',
     price: 25,
-    objectID: 51,
+    objectID: 54,
   },
   {
     name: 'Jumanji',
@@ -600,7 +644,7 @@ const colourList = [
     round: '/Assets/hand_e_jumanji_round.png',
     stiletto: '/Assets/hand_e_jumanji_stiletto.png',
     price: 25,
-    objectID: 52,
+    objectID: 55,
   },
   // {
   //   name: 'Thermo 4',
@@ -611,7 +655,7 @@ const colourList = [
   //   round: '/Assets/hand_e_thermo4_round.png',
   //   stiletto: '/Assets/hand_e_thermo4_stiletto.png',
   //   price: 25,
-  //   objectID: 53,
+  //   objectID: 56,
   // },
   {
     name: 'Jungle',
@@ -622,7 +666,7 @@ const colourList = [
     round: '/Assets/hand_e_jungle_round.png',
     stiletto: '/Assets/hand_e_jungle_stiletto.png',
     price: 25,
-    objectID: 54,
+    objectID: 57,
   },
   {
     name: 'Galaxy',
@@ -633,7 +677,7 @@ const colourList = [
     round: '/Assets/hand_e_galaxy_round.png',
     stiletto: '/Assets/hand_e_galaxy_stiletto.png',
     price: 25,
-    objectID: 55,
+    objectID: 58,
   },
   {
     name: 'Royal Navy',
@@ -644,7 +688,7 @@ const colourList = [
     round: '/Assets/hand_e_royalnavy_round.png',
     stiletto: '/Assets/hand_e_royalnavy_stiletto.png',
     price: 25,
-    objectID: 56,
+    objectID: 59,
   },
   {
     name: 'Nightfall',
@@ -655,7 +699,7 @@ const colourList = [
     round: '/Assets/hand_e_nightfall_round.png',
     stiletto: '/Assets/hand_e_nightfall_stiletto.png',
     price: 25,
-    objectID: 57,
+    objectID: 60,
   },
   {
     name: 'Jet Black',
@@ -666,7 +710,7 @@ const colourList = [
     round: '/Assets/hand_e_jetblack_round.png',
     stiletto: '/Assets/hand_e_jetblack_stiletto.png',
     price: 25,
-    objectID: 58,
+    objectID: 61,
   },
 ];
 
@@ -944,7 +988,7 @@ class Cost extends Component {
           {children}£{price}
         </div>
         <NavLink to="/">
-          <img src={logo} id="logo" width="75em" alt="logo"/>
+          <img src={logoApp} id="logoApp" width="75em" alt="logo"/>
         </NavLink>
         {/* <p id="promo">Like what you've created? See more of my work over on my <a href="https://www.instagram.com/ejvnails/">Instagram!</a> Or contact me on 07951476008 for more details and to book an appointment!</p> */}
       </div>
