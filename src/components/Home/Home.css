@@ -6,7 +6,38 @@
 }
 
 .first {
-  height: 500px;
+  height: 700px;
+  text-align: center;
+}
+@media screen and (max-width: 1150px) {
+  .first {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 1015px) {
+  .first {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .first {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .first {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .first {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .first {
+    height: 180px;
+  }
 }
 
 .second {
@@ -20,14 +51,18 @@
   z-index:1;
 }
 
-.heading {
-  transform: translateY(45%);
-  margin: 0;
+#services-content {
+  background-color: #fff;
+}
+#aboutus-content {
+  background-color: #f6f6f6;
+}
+#contact-content {
+  background-color: #fff;
 }
 
-.fill {
+.slant-content {
   height: 600px;
-  background-color: #fff;
   margin-top: -3px;
 }
 
@@ -38,15 +73,52 @@
 #slant-one {
   fill: #fff;
 }
-#top-slant {
-  background-color: #f6f6f6;
-}
-
 #slant-two {
+  fill: #f6f6f6;
+}
+#slant-three {
   fill: #231F20;
 }
-#third-slant {
+#slant-four {
+  fill: #fff;
+}
+
+#second-slant {
   background-color: #fff;
+}
+#third-slant {
+  background-color: #f6f6f6;
+}
+#fourth-slant {
+  background-color: #231F20;
+}
+
+.heading {
+  position: absolute;
+  left: 50%;
+}
+
+#landscape {
+  width: 160%;
+  display: inline-block;
+  transform: translateX(-28%);
+  z-index: -1;
+  position: relative;
+}
+
+.svg-heading {
+  position: relative;
+  left: -50%;
+}
+
+.slant-container {
+  z-index: 10;
+  position: relative;
+}
+
+#landscape-slant {
+  position: relative;
+  z-index: 0;
 }
 
 .third {
@@ -66,7 +138,7 @@
 
 }
 
-.fourth {
+.slant-content {
   background-color: #231F20;
   height: 600px;
   border: none;

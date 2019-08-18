@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2953.9 1479.2">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1761.5" y1="-22.93" x2="1761.5" y2="1112.75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0e1b58" stop-opacity="0"/>
+      <stop offset="0.14" stop-color="#121d5b" stop-opacity="0.02"/>
+      <stop offset="0.24" stop-color="#1e2265" stop-opacity="0.09"/>
+      <stop offset="0.33" stop-color="#322a76" stop-opacity="0.2"/>
+      <stop offset="0.41" stop-color="#4d358d" stop-opacity="0.35"/>
+      <stop offset="0.72" stop-color="#e394dd"/>
+      <stop offset="1" stop-color="#ffacc1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="735.46" y1="865.14" x2="890.63" y2="1278.94" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9854b7"/>
+      <stop offset="1" stop-color="#4d358d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="1179.67" y1="741.62" x2="1357.44" y2="1215.69" gradientTransform="translate(187.7 -188.7) rotate(8.8)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="2283.5" y1="564.48" x2="2283.5" y2="818.89" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9854b7"/>
+      <stop offset="1" stop-color="#39184b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="947.39" y1="616.34" x2="947.39" y2="786.85" xlink:href="#linear-gradient-4"/>
+    <linearGradient id="linear-gradient-6" x1="1261.75" y1="719.6" x2="1261.75" y2="860.72" xlink:href="#linear-gradient-4"/>
+    <linearGradient id="linear-gradient-7" x1="577.31" y1="143.01" x2="834.9" y2="404.87" gradientUnits="userSpaceOnUse">
+      <stop offset="0.14" stop-color="#ffc773"/>
+      <stop offset="0.52" stop-color="#e372d7"/>
+      <stop offset="1" stop-color="#903fd7"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="1475.61" y1="465.31" x2="1586.61" y2="546.43" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc773"/>
+      <stop offset="0.27" stop-color="#e372d7"/>
+      <stop offset="1" stop-color="#783fcc"/>
+    </linearGradient>
+    <clipPath id="clip-path" transform="translate(801.5)">
+      <path d="M864.3,281.8A132.8,132.8,0,0,0,732.8,149c-73.1-.7-133.5,58.6-134.1,131.6a132.2,132.2,0,0,0,43.6,99.6,134.7,134.7,0,0,1,42.5,79.4h94.7v-.2c4.7-30.6,19.2-58.9,41.9-79.8A132.5,132.5,0,0,0,864.3,281.8Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <title>Landscape</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <rect x="801.5" width="1920" height="1080" fill="url(#linear-gradient)"/>
+    <ellipse cx="835" cy="1130.6" rx="835" ry="328" fill="url(#linear-gradient-2)"/>
+    <ellipse cx="1325.6" cy="1130.9" rx="835" ry="328" transform="translate(644.7 215.1) rotate(-8.8)" fill="url(#linear-gradient-3)"/>
+    <g>
+      <circle cx="2283.5" cy="693" r="135" fill="url(#linear-gradient-4)"/>
+      <polygon points="2293.5 817 2273.5 817 2263.5 941 2304.5 941 2293.5 817" fill="#39184b"/>
+      <path d="M1540.2,996.4,1503,941h-41l56.4,55.4c-67.2,2.7-97.6,31.1-68.1,65.7,31.1,36.4,116.7,66,191.2,66s109.9-29.6,78.8-66C1690.8,1027.5,1611.9,999.1,1540.2,996.4Z" transform="translate(801.5)" opacity="0.15"/>
+      <ellipse cx="2284.5" cy="941" rx="33" ry="9" opacity="0.15"/>
+    </g>
+    <g>
+      <circle cx="947.4" cy="702.5" r="90.5" fill="url(#linear-gradient-5)"/>
+      <polygon points="954.1 785.6 940.7 785.6 934 868.7 961.5 868.7 954.1 785.6" fill="#39184b"/>
+      <path d="M174.7,906.1,160,868.7H132.5l27.6,37.4c-45.5,1.8-71.1,21-57.7,44.3S168.5,995,218.5,995s79-20,64.9-44.6S222.3,907.9,174.7,906.1Z" transform="translate(801.5)" opacity="0.15"/>
+    </g>
+    <g>
+      <circle cx="1261.8" cy="790.9" r="74.9" fill="url(#linear-gradient-6)"/>
+      <polygon points="1267.3 859.7 1256.2 859.7 1250.7 928.4 1273.4 928.4 1267.3 859.7" fill="#39184b"/>
+      <path d="M472.7,953.3l-.8-24.9H449.2l11.4,24.9c-38.2,1.2-65.2,14-61.2,29.5s41.1,29.6,82.5,29.6,71.4-13.2,67.2-29.6S511.5,954.5,472.7,953.3Z" transform="translate(801.5)" opacity="0.15"/>
+    </g>
+    <ellipse cx="948.1" cy="868.7" rx="22.1" ry="6" opacity="0.15"/>
+    <ellipse cx="1262.1" cy="928.7" rx="15.8" ry="4.3" opacity="0.15"/>
+  </g>
+  <g id="HOTAIRBALLOON">
+    <path d="M864.3,281.8A132.8,132.8,0,0,0,732.8,149c-73.1-.7-133.5,58.6-134.1,131.6a132.2,132.2,0,0,0,43.6,99.6,134.7,134.7,0,0,1,42.5,79.4h94.7v-.2c4.7-30.6,19.2-58.9,41.9-79.8A132.5,132.5,0,0,0,864.3,281.8Z" transform="translate(801.5)" fill="url(#linear-gradient-7)"/>
+    <polygon points="1569.6 540 1498.9 540 1486.5 485.4 1582 485.4 1569.6 540" fill="url(#linear-gradient-8)"/>
+    <g clip-path="url(#clip-path)">
+      <g opacity="0.4">
+        <rect x="1371" y="214.8" width="322.7" height="64.55" fill="#fff"/>
+      </g>
+      <g opacity="0.4">
+        <rect x="1373.5" y="343.9" width="322.7" height="60.82" fill="#fff"/>
+      </g>
+    </g>
+    <path d="M621,260.1s13.7-72,86.9-90.6" transform="translate(801.5)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.24"/>
+  </g>
+</svg>
