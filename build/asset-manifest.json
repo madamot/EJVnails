@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.46dd7656.chunk.css",
-    "main.js": "/static/js/main.b66ca656.chunk.js",
-    "main.js.map": "/static/js/main.b66ca656.chunk.js.map",
+    "main.css": "/static/css/main.bfd7967a.chunk.css",
+    "main.js": "/static/js/main.23002bf5.chunk.js",
+    "main.js.map": "/static/js/main.23002bf5.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/js/2.2a995146.chunk.js": "/static/js/2.2a995146.chunk.js",
     "static/js/2.2a995146.chunk.js.map": "/static/js/2.2a995146.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b2663d549e8a91b828268323362a263b.js": "/precache-manifest.b2663d549e8a91b828268323362a263b.js",
+    "precache-manifest.eafb8bd7abe4a685e8c9a7873389c0bf.js": "/precache-manifest.eafb8bd7abe4a685e8c9a7873389c0bf.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.46dd7656.chunk.css.map": "/static/css/main.46dd7656.chunk.css.map",
+    "static/css/main.bfd7967a.chunk.css.map": "/static/css/main.bfd7967a.chunk.css.map",
     "static/media/AboutUs.svg": "/static/media/AboutUs.f388cfef.svg",
     "static/media/Contact.svg": "/static/media/Contact.3bf36253.svg",
     "static/media/Customise.svg": "/static/media/Customise.043d1887.svg",
     "static/media/index.css": "/static/media/GrandHotel-Regular.051073a1.ttf",
-    "static/media/Landscape.svg": "/static/media/Landscape.2c32069d.svg",
+    "static/media/Landscape.svg": "/static/media/Landscape.af37fb61.svg",
     "static/media/Services.svg": "/static/media/Services.4d13c802.svg",
     "static/media/logo.svg": "/static/media/logo.10befaf7.svg"
   }

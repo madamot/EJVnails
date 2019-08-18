@@ -7,36 +7,27 @@
 
 .first {
   height: 700px;
+  width: 100%;
   text-align: center;
 }
-@media screen and (max-width: 1150px) {
-  .first {
-    height: 600px;
+@media screen and (min-width: 1150px) {
+  #landscape {
+    top: -100px;
   }
 }
-@media screen and (max-width: 1015px) {
-  .first {
-    height: 500px;
+@media screen and (min-width: 1200px) {
+  #landscape {
+    top: -150px;
   }
 }
-@media screen and (max-width: 850px) {
-  .first {
-    height: 400px;
+@media screen and (min-width: 1300px) {
+  #landscape {
+    top: -200px;
   }
 }
 @media screen and (max-width: 700px) {
   .first {
-    height: 300px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .first {
-    height: 200px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .first {
-    height: 180px;
+    height: 90vh;
   }
 }
 
@@ -47,8 +38,9 @@
 .slant {
   width: 100%;
   height: 100px;
-  left:0px;
+  left: 0px;
   z-index:1;
+  margin-bottom: -2px;
 }
 
 #services-content {
@@ -63,7 +55,6 @@
 
 .slant-content {
   height: 600px;
-  margin-top: -3px;
 }
 
 #main-alt {
@@ -104,16 +95,30 @@
   transform: translateX(-28%);
   z-index: -1;
   position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 700px) {
+  #landscape {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+  }
 }
 
 .svg-heading {
   position: relative;
   left: -50%;
 }
+@media screen and (max-width: 500px) {
+  .svg-heading {
+    height: 50px;
+  }
+}
 
 .slant-container {
   z-index: 10;
   position: relative;
+  top: -200px;
 }
 
 #landscape-slant {
