@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a38c6c070ff0ce2dbc74f6d1cd03df0",
+    "revision": "cd574ecb6053305280fd7b9f88558639",
     "url": "/index.html"
   },
   {
-    "revision": "fa00995af9ecd0813e11",
-    "url": "/static/css/main.bfd7967a.chunk.css"
+    "revision": "a52aac193e374b32fe0d",
+    "url": "/static/css/main.cf7abb4c.chunk.css"
   },
   {
-    "revision": "5caf62c2914c302f5d51",
-    "url": "/static/js/2.2a995146.chunk.js"
+    "revision": "08d475348cd1b0a01c1d",
+    "url": "/static/js/2.3d1c9da1.chunk.js"
   },
   {
-    "revision": "fa00995af9ecd0813e11",
-    "url": "/static/js/main.23002bf5.chunk.js"
+    "revision": "a52aac193e374b32fe0d",
+    "url": "/static/js/main.e6ead19c.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -36,15 +36,31 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/GrandHotel-Regular.051073a1.ttf"
   },
   {
-    "revision": "af37fb6156a5b25e76cadbbc99bdd170",
-    "url": "/static/media/Landscape.af37fb61.svg"
+    "revision": "ad4d6d19b6cdb5b5ac3834e34d94dd21",
+    "url": "/static/media/Landscape.ad4d6d19.svg"
   },
   {
     "revision": "4d13c802fe2b7855000281a0fe375afe",
     "url": "/static/media/Services.4d13c802.svg"
   },
   {
+    "revision": "8fd5fea84301cdae22ab61cc0dc2baf0",
+    "url": "/static/media/extensions-icon-round.8fd5fea8.svg"
+  },
+  {
+    "revision": "aa5fa784fbc378e3fe55b57fbf95d26d",
+    "url": "/static/media/extensions-icon-square.aa5fa784.svg"
+  },
+  {
+    "revision": "71e6af78c2ef7045b1fde312d9f311e7",
+    "url": "/static/media/extensions-icon.71e6af78.svg"
+  },
+  {
     "revision": "10befaf7e94898f3917bc3cd98968461",
     "url": "/static/media/logo.10befaf7.svg"
+  },
+  {
+    "revision": "87c398be5690ed507ea65d968eee7ac6",
+    "url": "/static/media/manicures-icon.87c398be.svg"
   }
 ]);

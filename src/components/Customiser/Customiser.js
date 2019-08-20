@@ -4,6 +4,9 @@ import logoApp from '../../logo.svg';
 import Toggle from '../../Toggle';
 import ReactGA from 'react-ga';
 import { NavLink } from "react-router-dom";
+import extensionsStiletto from '../../extensions-icon.svg';
+import extensionsSquare from '../../extensions-icon-square.svg';
+import extensionsRound from '../../extensions-icon-round.svg';
 ReactGA.initialize('UA-145398669-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
@@ -719,6 +722,7 @@ const shapeList = [
     name: 'Square',
     class: 'shape',
     hex: '#FFA500',
+    icon: extensionsSquare,
     standard: '/Assets/hand_e1.png',
     e_shape_SQ: '/Assets/hand_e_snowqueen.png',
     e_shape_NC: '/Assets/hand_e_nightclub.png',
@@ -729,6 +733,7 @@ const shapeList = [
     name: 'Round',
     class: 'shape',
     hex: '#b0e0e6',
+    icon: extensionsRound,
     standard: '/Assets/hand_e_round.png',
     e_shape_SQ: '/Assets/hand_e_round_snowqueen.png',
     price: 0,
@@ -752,6 +757,7 @@ const shapeList = [
     name: 'Stiletto',
     class: 'shape',
     hex: '#b0e0e6',
+    icon: extensionsStiletto,
     standard: '/Assets/hand_e_stiletto.png',
     e_shape_SQ: '/Assets/hand_e_stiletto_snowqueen.png',
     e_shape_NC: '/Assets/hand_e_stiletto_nightclub.png',
@@ -954,7 +960,9 @@ class Table extends Component {
         {list.map(pick =>
           <Button onClick={() => onPick(pick)} type="radio" key={pick.objectID} className="colBox">
             <span>
-              <div className="colourPeak" style={{ backgroundColor: pick.hex }}></div>
+              <div className="colourPeak" style={{ backgroundColor: pick.hex }}>
+                <img src={pick.icon} alt="icon" />
+              </div>
             </span>
             <span>
               <br/>{pick.name}
