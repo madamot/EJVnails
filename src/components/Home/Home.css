@@ -11,12 +11,63 @@ hr {
   width: 20%;
   border: 3px solid #EB008B;
   margin-top: 75px;
+  margin-bottom: 0;
+}
+
+.alttext {
+  color: #EB008B;
+  text-align: left;
+  line-height: 25px;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.alttextlist {
+  color: #EB008B;
+  text-align: left;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: 60px;
+}
+
+.custom-list {
+  list-style: none;
+  counter-reset: item;
+}
+.custom-list-item {
+  counter-increment: item;
+  padding: 50px;
+}
+.custom-list-item:before {
+  content: counter(item);
+  border-radius: 100%;
+  border: solid 2px #EB008B;
+  padding: 25px;
+  font-size: 25px;
+  color: #EB008B;
+  width: 1.2em;
+  display: inline-block;
+  float: left;
+
+
 }
 
 h4 {
-  color: grey;
+  color: #231F20;
   font-size: 20px;
   text-align: left;
+}
+
+h5 {
+  color: grey;
+  font-size: 15px;
+  text-align: left;
+  font-weight: lighter;
+  line-height: 25px;
 }
 
 .home-container {
@@ -90,6 +141,9 @@ h4 {
 #slant-four {
   fill: #fff;
 }
+#slant-five {
+  fill: #fff;
+}
 
 #second-slant {
   background-color: #fff;
@@ -98,12 +152,20 @@ h4 {
   background-color: #f6f6f6;
 }
 #fourth-slant {
+  margin-top: -15px;
   background-color: #231F20;
+}
+#fifth-slant {
+  background-color: #fff;
 }
 
 .heading {
   position: absolute;
   left: 50%;
+}
+
+object {
+  overflow: hidden;
 }
 
 #landscape {
@@ -179,7 +241,23 @@ h4 {
 .pricelist-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
   margin-top: 100px;
+  grid-gap: 25px;
+}
+
+.pricelist-container > div {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#note {
+  grid-column: 1/3;
+  background-color: #EB008B;
+  border-radius: 15px;
+  color: #fff;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .about-container {
@@ -188,8 +266,22 @@ h4 {
   margin-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
+
 }
 
 #intro {
   grid-column: 1/5;
+  margin-left: 20px;
+  line-height: 25px;
+}
+
+#col1 {
+  grid-column: 1/3;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#col2 {
+  grid-column: 3/5;
+  padding-left: 20px;
+  padding-right: 20px;
 }

@@ -32,6 +32,27 @@ const baseList = [
   },
 ];
 
+const materialList = [
+  {
+    name: 'BIAB',
+    class: 'material',
+    hex: '#FFA500',
+    style: 'natural',
+    handChoice: '/Assets/hand_n1.png',
+    price: 20,
+    objectID: 0,
+  },
+  {
+    name: 'Hard Gel',
+    class: 'material',
+    hex: '#b0e0e6',
+    style: 'extensions',
+    handChoice: '/Assets/hand_e1.png',
+    price: 25,
+    objectID: 1,
+  },
+];
+
 const colourList = [
   {
     name: 'Snow Queen',
@@ -783,6 +804,9 @@ class App extends Component {
       baseList: baseList,
       chosenBase: "",
       basePrice: 0,
+      materialList: materialList,
+      chosenMaterial: "",
+      materialPrice: 0,
       colourList: colourList,
       chosenColour: "",
       colourPrice: 0,
@@ -809,6 +833,12 @@ class App extends Component {
               this.setState({ handChoice: this.state.chosenColour.square, basePrice: pick.price });
             }
           }
+          if (this.state.chosenMaterial) {
+            this.setState({ materialPrice: 0 })
+          }
+        break;
+      case 'material':
+          this.setState({ chosenMaterial: pick, materialPrice: pick.price }, () => console.log(this.state.chosenMaterial));
         break;
       case 'shape':
           this.setState({ chosenShape: pick, shapePrice: pick.price }, () => console.log(this.state.chosenShape));
@@ -865,7 +895,7 @@ class App extends Component {
 
   render() {
     // eslint-disable-next-line
-    const { chosenColour, chosenBase, chosenShape, handChoice } = this.state;
+    const { chosenColour, chosenBase, chosenMaterial, chosenShape, handChoice, basePrice, materialPrice, shapePrice } = this.state;
 
     return (
         <div className="App">
@@ -883,6 +913,21 @@ class App extends Component {
                   </div>
                 )}
               </Toggle>
+              { this.state.chosenBase.style === 'extensions'
+                ? <Toggle>
+                  {({ on, toggle }) => (
+                    <div className="sideBar">
+                      {on && <Table
+                        list={materialList}
+                        onPick={this.onPick}
+                             />}
+                      <button onClick={toggle}>Material</button>
+                      {!on && <h1 className="label">2</h1>}
+                    </div>
+                  )}
+                </Toggle>
+                : null
+              }
               { this.state.chosenBase.style === 'natural'
                 ? null
                 : <Toggle>
@@ -939,7 +984,7 @@ class App extends Component {
 
 
 
-            <Cost price={this.state.basePrice + this.state.shapePrice + this.state.colourPrice}>
+            <Cost price={this.state.basePrice + this.state.materialPrice + this.state.shapePrice + this.state.colourPrice}>
               { chosenBase
                 ? <h3 id="total">Total</h3>
                 : null
@@ -994,6 +1039,8 @@ class Cost extends Component {
       <div className="bottomBar">
         <div id="price">
           {children}£{price}
+          <br />
+
         </div>
         <NavLink to="/">
           <img src={logoApp} id="logoApp" width="75em" alt="logo"/>

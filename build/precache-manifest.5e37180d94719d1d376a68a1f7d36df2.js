@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cd574ecb6053305280fd7b9f88558639",
+    "revision": "a3cb773f412b0f78ad5c7851bc4e5172",
     "url": "/index.html"
   },
   {
-    "revision": "a52aac193e374b32fe0d",
-    "url": "/static/css/main.cf7abb4c.chunk.css"
+    "revision": "662749857d4826685c21",
+    "url": "/static/css/main.a2176d8f.chunk.css"
   },
   {
-    "revision": "08d475348cd1b0a01c1d",
-    "url": "/static/js/2.3d1c9da1.chunk.js"
+    "revision": "47da7465a80cb525899a",
+    "url": "/static/js/2.cd44d65c.chunk.js"
   },
   {
-    "revision": "a52aac193e374b32fe0d",
-    "url": "/static/js/main.e6ead19c.chunk.js"
+    "revision": "662749857d4826685c21",
+    "url": "/static/js/main.2ff113e4.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -60,7 +60,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo.10befaf7.svg"
   },
   {
-    "revision": "87c398be5690ed507ea65d968eee7ac6",
-    "url": "/static/media/manicures-icon.87c398be.svg"
+    "revision": "3d56bb0900ea9b494ab9b0ccc4361335",
+    "url": "/static/media/manicures-icon.3d56bb09.svg"
   }
 ]);
