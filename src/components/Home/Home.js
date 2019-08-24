@@ -149,7 +149,7 @@ const Home = () => {
           </div>
           <div className="slant-content" id="customise-content">
             <hr id="alt" />
-            {/* <h4 className="alttext">The Customiser allows you to visually build and create your own set before booking an appointment.</h4> */}
+            <h4 className="alttext">The Customiser allows you to visually build and create your own set before booking an appointment.</h4>
             <ol className="custom-list">
               <li className="custom-list-item"><h4 className="alttextlist">You can choose from a range of different services that we have to offer from our huge collection: this includes the ability to alter between our range of colours, shapes and bases.</h4></li>
               <li className="custom-list-item"><h4 className="alttextlist">Each selection you make will show you how much that service will cost.</h4></li>
