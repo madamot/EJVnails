@@ -4,6 +4,17 @@ import logoApp from '../../logo.svg';
 import Toggle from '../../Toggle';
 import ReactGA from 'react-ga';
 import { NavLink } from "react-router-dom";
+import Popup from "reactjs-popup";
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+  EmailShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  WhatsappIcon,
+  EmailIcon,
+} from 'react-share';
 import extensionsStiletto from '../../extensions-icon.svg';
 import extensionsSquare from '../../extensions-icon-square.svg';
 import extensionsRound from '../../extensions-icon-round.svg';
@@ -984,12 +995,37 @@ class App extends Component {
 
 
 
-            <Cost price={this.state.basePrice + this.state.materialPrice + this.state.shapePrice + this.state.colourPrice}>
-              { chosenBase
-                ? <h3 id="total">Total</h3>
-                : null
+            <Footer price={this.state.basePrice + this.state.materialPrice + this.state.shapePrice + this.state.colourPrice}>
+              {
+                // eslint-disable-next-line
+                this.state.chosenBase.name === 'Extensions' && this.state.chosenBase && this.state.chosenMaterial && this.state.chosenShape && this.state.chosenColour || this.state.chosenBase.name === 'On Naturals' && this.state.chosenBase && this.state.chosenColour
+                  ? <NavLink to="/book"><h3 id="app-button">Book an Appointment ></h3></NavLink>
+
+                  : null
               }
-            </Cost>
+              {
+                // eslint-disable-next-line
+                this.state.chosenBase.name === 'Extensions' && this.state.chosenBase && this.state.chosenMaterial && this.state.chosenShape && this.state.chosenColour || this.state.chosenBase.name === 'On Naturals' && this.state.chosenBase && this.state.chosenColour
+                  ? <Popup trigger={<button id="share-button">Share ></button>} position="bottom center">
+                    <div>
+                      <div className="social-button">
+                        <TwitterShareButton url={"www.ejvnails.com" + this.state.handChoice}><TwitterIcon size={32} round={true} /></TwitterShareButton>
+                      </div>
+                      <div className="social-button">
+                        <FacebookShareButton url={"www.ejvnails.com" + this.state.handChoice}><FacebookIcon size={32} round={true} /></FacebookShareButton>
+                      </div>
+                      <div className="social-button">
+                        <WhatsappShareButton url={"www.ejvnails.com" + this.state.handChoice} ><WhatsappIcon size={32} round={true} /></WhatsappShareButton>
+                      </div>
+                      <div className="social-button">
+                        <EmailShareButton url={"www.ejvnails.com" + this.state.handChoice} ><EmailIcon size={32} round={true} /></EmailShareButton>
+                      </div>
+                    </div>
+                  </Popup>
+
+                  : null
+              }
+            </Footer>
 
           </div>
         </div>
@@ -1032,15 +1068,18 @@ class Visualise extends Component {
   }
 }
 
-class Cost extends Component {
+class Footer extends Component {
   render() {
     const { price, children } = this.props;
     return (
       <div className="bottomBar">
         <div id="price">
-          {children}£{price}
+          <h3 id="total">Total</h3>
+          £{price}
           <br />
-
+        </div>
+        <div id="footer-container">
+          {children}
         </div>
         <NavLink to="/">
           <img src={logoApp} id="logoApp" width="75em" alt="logo"/>

@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div>
       <Navigation />
-      <h1>Contact</h1>
+      <h1>Book an Appointment</h1>
       <h2>Coming Soon</h2>
     </div>
   );

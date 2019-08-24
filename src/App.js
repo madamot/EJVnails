@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from './components/Home/Home.js';
-import Contact from './components/Contact';
+import Book from './components/Book';
 import Customiser from './components/Customiser/Customiser.js';
 
 
@@ -14,7 +14,7 @@ class App extends Component {
     <BrowserRouter>
       <Switch>
         <Route path='/' component={Home} exact />
-        <Route path='/contact' component={Contact} />
+        <Route path='/book' component={Book} />
         <Route path='/customiser' component={Customiser} />
       </Switch>
     </BrowserRouter>

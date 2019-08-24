@@ -37,6 +37,11 @@ ul > li {
   background-color: #fff;
   font-size: 12px;
 }
+@media screen and (max-width: 575px) {
+  .colBox {
+    padding: 0px;
+  }
+}
 .colBox:focus {
   outline: 0;
   color: #fff;
@@ -140,6 +145,60 @@ ul > li {
 #total {
   padding: 0;
   margin: 0;
+}
+
+Footer {
+  text-align: center;
+}
+
+#footer-container {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+#app-button {
+  display: inline;
+  width: 250px;
+  background-color: #EB008B;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 10px;
+  overflow-wrap: word-break;
+}
+#share-button {
+  display: inline;
+  width: 250px;
+  background-color: #adda8b;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 5px;
+}
+
+#share-button {
+  display: inline-block;
+}
+@media screen and (max-width: 575px) {
+  #share-button, #app-button {
+    width: 100px;
+    padding: 5px;
+    font-size: 8px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+}
+
+.social-button {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 15px;
+  text-align: center;
 }
 
 #price {

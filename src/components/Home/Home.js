@@ -131,7 +131,7 @@ const Home = () => {
                 <h5>The Gel Bottle is my brand of choice and what I swear by... blah blah blah idk</h5>
               </div>
               <div id="col2">
-                <h5>Since moving from London and starting University I am offering services on and around campus and in Fareham.</h5>
+                <h5>Since moving from London and starting University I am offering services on and around campus, Winchester, Fareham and everywhere in between.</h5>
               </div>
             </div>
           </div>
