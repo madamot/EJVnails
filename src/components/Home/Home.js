@@ -49,7 +49,7 @@ const Home = () => {
               </li>
               <li>
                 <img alt="BIAB icon" src={biab} height="100px" />
-                <br /><br />BIAB</li>
+                <br /><br />BIABbbbbbbb</li>
               <li>
                 <img alt="Hard Gel icon" src={hardgel} height="100px" />
                 <br /><br />Hard Gel</li>
