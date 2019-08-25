@@ -9,6 +9,8 @@ import Contact from '../../Contact.svg';
 import { NavLink } from "react-router-dom";
 import extensions from '../../extensions-icon.svg';
 import manicures from '../../manicures-icon.svg';
+import biab from '../../BIAB-icon.svg';
+import hardgel from '../../hardgel-icon.svg';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -45,8 +47,12 @@ const Home = () => {
                 <img alt="Manicures icon" src={manicures} height="100px" />
                 <br /><br />Manicures
               </li>
-              <li><img alt="BIAB icon" src="https://via.placeholder.com/75" /><br />BIAB</li>
-              <li><img alt="Hard Gel icon" src="https://via.placeholder.com/75" /><br />Hard Gel</li>
+              <li>
+                <img alt="BIAB icon" src={biab} height="100px" />
+                <br /><br />BIAB</li>
+              <li>
+                <img alt="Hard Gel icon" src={hardgel} height="100px" />
+                <br /><br />Hard Gel</li>
             </ul>
             <div className="pricelist-container">
               <div>

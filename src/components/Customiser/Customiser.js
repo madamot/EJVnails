@@ -18,6 +18,10 @@ import {
 import extensionsStiletto from '../../extensions-icon.svg';
 import extensionsSquare from '../../extensions-icon-square.svg';
 import extensionsRound from '../../extensions-icon-round.svg';
+import extensions from '../../extensions-icon.svg';
+import biab from '../../BIAB-icon.svg';
+import naturals from '../../natural-icon.svg';
+import hardgel from '../../hardgel-icon.svg';
 ReactGA.initialize('UA-145398669-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
@@ -26,8 +30,8 @@ const baseList = [
   {
     name: 'On Naturals',
     class: 'base',
-    hex: '#FFA500',
     style: 'natural',
+    icon: naturals,
     handChoice: '/Assets/hand_n1.png',
     price: 0,
     objectID: 0,
@@ -35,8 +39,8 @@ const baseList = [
   {
     name: 'Extensions',
     class: 'base',
-    hex: '#b0e0e6',
     style: 'extensions',
+    icon: extensions,
     handChoice: '/Assets/hand_e1.png',
     price: 0,
     objectID: 1,
@@ -47,7 +51,7 @@ const materialListExtensions = [
   {
     name: 'BIAB',
     class: 'material',
-    hex: '#FFA500',
+    icon: biab,
     style: 'natural',
     handChoice: '/Assets/hand_n1.png',
     price: 10,
@@ -56,7 +60,7 @@ const materialListExtensions = [
   {
     name: 'Hard Gel',
     class: 'material',
-    hex: '#b0e0e6',
+    icon: hardgel,
     style: 'extensions',
     handChoice: '/Assets/hand_e1.png',
     price: 13,
@@ -68,7 +72,7 @@ const materialListNaturals = [
   {
     name: 'BIAB Overlay',
     class: 'material',
-    hex: '#FFA500',
+    icon: biab,
     style: 'natural',
     handChoice: '/Assets/hand_n1.png',
     price: 3,
@@ -774,7 +778,6 @@ const shapeList = [
   {
     name: 'Square',
     class: 'shape',
-    hex: '#FFA500',
     icon: extensionsSquare,
     standard: '/Assets/hand_e1.png',
     e_shape_SQ: '/Assets/hand_e_snowqueen.png',
@@ -785,7 +788,6 @@ const shapeList = [
   {
     name: 'Round',
     class: 'shape',
-    hex: '#b0e0e6',
     icon: extensionsRound,
     standard: '/Assets/hand_e_round.png',
     e_shape_SQ: '/Assets/hand_e_round_snowqueen.png',
@@ -809,7 +811,6 @@ const shapeList = [
   {
     name: 'Stiletto',
     class: 'shape',
-    hex: '#b0e0e6',
     icon: extensionsStiletto,
     standard: '/Assets/hand_e_stiletto.png',
     e_shape_SQ: '/Assets/hand_e_stiletto_snowqueen.png',
