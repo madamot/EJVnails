@@ -9,7 +9,7 @@ import Contact from '../../Contact.svg';
 import { NavLink } from "react-router-dom";
 import extensions from '../../extensions-icon.svg';
 import manicures from '../../manicures-icon.svg';
-import biab from '../../BIAB-icon.svg';
+import biab from '../../biab-icon.svg';
 import hardgel from '../../hardgel-icon.svg';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'

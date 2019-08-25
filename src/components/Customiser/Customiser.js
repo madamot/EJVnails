@@ -19,7 +19,7 @@ import extensionsStiletto from '../../extensions-icon.svg';
 import extensionsSquare from '../../extensions-icon-square.svg';
 import extensionsRound from '../../extensions-icon-round.svg';
 import extensions from '../../extensions-icon.svg';
-import biab from '../../BIAB-icon.svg';
+import biab from '../../biab-icon.svg';
 import naturals from '../../natural-icon.svg';
 import hardgel from '../../hardgel-icon.svg';
 ReactGA.initialize('UA-145398669-1');
