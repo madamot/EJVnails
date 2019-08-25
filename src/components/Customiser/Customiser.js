@@ -70,12 +70,12 @@ const materialListExtensions = [
 
 const materialListNaturals = [
   {
-    name: 'BIAB Overlay',
+    name: '2-in-1 Base',
     class: 'material',
-    icon: biab,
+    hex: '#FFA500',
     style: 'natural',
     handChoice: '/Assets/hand_n1.png',
-    price: 3,
+    price: 0,
     objectID: 0,
   },
   {
@@ -85,7 +85,16 @@ const materialListNaturals = [
     style: 'natural',
     handChoice: '/Assets/hand_n1.png',
     price: 2,
-    objectID: 0,
+    objectID: 1,
+  },
+  {
+    name: 'BIAB Overlay',
+    class: 'material',
+    icon: biab,
+    style: 'natural',
+    handChoice: '/Assets/hand_n1.png',
+    price: 3,
+    objectID: 2,
   },
 ];
 
@@ -942,7 +951,7 @@ class App extends Component {
                       list={baseList}
                       onPick={this.onPick}
                            />}
-                    <button onClick={toggle}>Base</button>
+                    <button onClick={toggle}>Type</button>
                     {!on && <h1 className="label">1</h1>}
                   </div>
                 )}
@@ -955,7 +964,7 @@ class App extends Component {
                         list={materialListExtensions}
                         onPick={this.onPick}
                              />}
-                      <button onClick={toggle}>Material</button>
+                      <button onClick={toggle}>Base</button>
                       {!on && <h1 className="label">2</h1>}
                     </div>
                   )}
@@ -970,7 +979,7 @@ class App extends Component {
                         list={materialListNaturals}
                         onPick={this.onPick}
                              />}
-                      <button onClick={toggle}>Material</button>
+                      <button onClick={toggle}>Base</button>
                       {!on && <h1 className="label">2</h1>}
                     </div>
                   )}
