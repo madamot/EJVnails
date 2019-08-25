@@ -1043,7 +1043,7 @@ class App extends Component {
               }
               {
                 // eslint-disable-next-line
-                this.state.chosenBase.name === 'Extensions' && this.state.chosenBase && this.state.chosenMaterial && this.state.chosenShape && this.state.chosenColour || this.state.chosenBase.name === 'On Naturals' && this.state.chosenBase && this.state.chosenColour
+                this.state.chosenBase.name === 'Extensions' && this.state.chosenBase && this.state.chosenMaterial && this.state.chosenShape && this.state.chosenColour || this.state.chosenBase.name === 'On Naturals' && this.state.chosenBase && this.state.chosenMaterial && this.state.chosenColour
                   ? <Popup trigger={<button id="share-button">Share ></button>} position="bottom center">
                     <div>
                       <div className="social-button">
