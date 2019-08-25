@@ -29,7 +29,7 @@ const baseList = [
     hex: '#FFA500',
     style: 'natural',
     handChoice: '/Assets/hand_n1.png',
-    price: 10,
+    price: 0,
     objectID: 0,
   },
   {
@@ -38,19 +38,19 @@ const baseList = [
     hex: '#b0e0e6',
     style: 'extensions',
     handChoice: '/Assets/hand_e1.png',
-    price: 20,
+    price: 0,
     objectID: 1,
   },
 ];
 
-const materialList = [
+const materialListExtensions = [
   {
     name: 'BIAB',
     class: 'material',
     hex: '#FFA500',
     style: 'natural',
     handChoice: '/Assets/hand_n1.png',
-    price: 20,
+    price: 10,
     objectID: 0,
   },
   {
@@ -59,8 +59,29 @@ const materialList = [
     hex: '#b0e0e6',
     style: 'extensions',
     handChoice: '/Assets/hand_e1.png',
-    price: 25,
+    price: 13,
     objectID: 1,
+  },
+];
+
+const materialListNaturals = [
+  {
+    name: 'BIAB Overlay',
+    class: 'material',
+    hex: '#FFA500',
+    style: 'natural',
+    handChoice: '/Assets/hand_n1.png',
+    price: 3,
+    objectID: 0,
+  },
+  {
+    name: 'Rubber Base Coat',
+    class: 'material',
+    hex: '#FFA500',
+    style: 'natural',
+    handChoice: '/Assets/hand_n1.png',
+    price: 2,
+    objectID: 0,
   },
 ];
 
@@ -73,7 +94,7 @@ const colourList = [
     square: '/Assets/hand_e_snowqueen_square.png',
     round: '/Assets/hand_e_snowqueen_round.png',
     stiletto: '/Assets/hand_e_snowqueen_stiletto.png',
-    price: 5,
+    price: 22,
     objectID: 0,
   },
   {
@@ -84,7 +105,7 @@ const colourList = [
     square: '/Assets/hand_e_nightclub_square.png',
     round: '/Assets/hand_e_nightclub_round.png',
     stiletto: '/Assets/hand_e_nightclub_stiletto.png',
-    price: 20,
+    price: 22,
     objectID: 1,
   },
   {
@@ -95,7 +116,7 @@ const colourList = [
     square: '/Assets/hand_e_rosegold_square.png',
     round: '/Assets/hand_e_rosegold_round.png',
     stiletto: '/Assets/hand_e_rosegold_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 2,
   },
   {
@@ -106,7 +127,7 @@ const colourList = [
     square: '/Assets/hand_e_daisy_square.png',
     round: '/Assets/hand_e_daisy_round.png',
     stiletto: '/Assets/hand_e_daisy_stiletto.png',
-    price: 5,
+    price: 22,
     objectID: 3,
   },
   {
@@ -117,7 +138,7 @@ const colourList = [
     square: '/Assets/hand_e_j01_square.png',
     round: '/Assets/hand_e_j01_round.png',
     stiletto: '/Assets/hand_e_j01_stiletto.png',
-    price: 20,
+    price: 22,
     objectID: 4,
   },
   {
@@ -128,7 +149,7 @@ const colourList = [
     square: '/Assets/hand_e_fluffycotton_square.png',
     round: '/Assets/hand_e_fluffycotton_round.png',
     stiletto: '/Assets/hand_e_fluffycotton_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 5,
   },
   {
@@ -139,7 +160,7 @@ const colourList = [
     square: '/Assets/hand_e_diana_square.png',
     round: '/Assets/hand_e_diana_round.png',
     stiletto: '/Assets/hand_e_diana_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 6,
   },
   {
@@ -150,7 +171,7 @@ const colourList = [
     square: '/Assets/hand_e_dolly_square.png',
     round: '/Assets/hand_e_dolly_round.png',
     stiletto: '/Assets/hand_e_dolly_stiletto.png',
-    price: 5,
+    price: 22,
     objectID: 7,
   },
   {
@@ -161,7 +182,7 @@ const colourList = [
     square: '/Assets/hand_e_pinacolada_square.png',
     round: '/Assets/hand_e_pinacolada_round.png',
     stiletto: '/Assets/hand_e_pinacolada_stiletto.png',
-    price: 20,
+    price: 22,
     objectID: 8,
   },
   {
@@ -172,7 +193,7 @@ const colourList = [
     square: '/Assets/hand_e_eve_square.png',
     round: '/Assets/hand_e_eve_round.png',
     stiletto: '/Assets/hand_e_eve_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 9,
   },
   {
@@ -183,7 +204,7 @@ const colourList = [
     square: '/Assets/hand_e_gossip_square.png',
     round: '/Assets/hand_e_gossip_round.png',
     stiletto: '/Assets/hand_e_gossip_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 10,
   },
   {
@@ -194,7 +215,7 @@ const colourList = [
     square: '/Assets/hand_e_v07_square.png',
     round: '/Assets/hand_e_v07_round.png',
     stiletto: '/Assets/hand_e_v07_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 11,
   },
   {
@@ -205,7 +226,7 @@ const colourList = [
     square: '/Assets/hand_e_teddy_square.png',
     round: '/Assets/hand_e_teddy_round.png',
     stiletto: '/Assets/hand_e_teddy_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 12,
   },
   {
@@ -216,7 +237,7 @@ const colourList = [
     square: '/Assets/hand_e_baby_square.png',
     round: '/Assets/hand_e_baby_round.png',
     stiletto: '/Assets/hand_e_baby_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 13,
   },
   {
@@ -227,7 +248,7 @@ const colourList = [
     square: '/Assets/hand_e_baby_square.png',
     round: '/Assets/hand_e_baby_round.png',
     stiletto: '/Assets/hand_e_baby_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 14,
   },
   {
@@ -238,7 +259,7 @@ const colourList = [
     square: '/Assets/hand_e_baby_square.png',
     round: '/Assets/hand_e_baby_round.png',
     stiletto: '/Assets/hand_e_baby_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 15,
   },
   {
@@ -249,7 +270,7 @@ const colourList = [
     square: '/Assets/hand_e_june_square.png',
     round: '/Assets/hand_e_june_round.png',
     stiletto: '/Assets/hand_e_june_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 16,
   },
   {
@@ -260,7 +281,7 @@ const colourList = [
     square: '/Assets/hand_e_marilyn_square.png',
     round: '/Assets/hand_e_marilyn_round.png',
     stiletto: '/Assets/hand_e_marilyn_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 17,
   },
   {
@@ -271,7 +292,7 @@ const colourList = [
     square: '/Assets/hand_e_hollywoodstar_square.png',
     round: '/Assets/hand_e_hollywoodstar_round.png',
     stiletto: '/Assets/hand_e_hollywoodstar_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 18,
   },
   {
@@ -282,7 +303,7 @@ const colourList = [
     square: '/Assets/hand_e_pinkpanther_square.png',
     round: '/Assets/hand_e_pinkpanther_round.png',
     stiletto: '/Assets/hand_e_pinkpanther_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 19,
   },
   {
@@ -293,7 +314,7 @@ const colourList = [
     square: '/Assets/hand_e_waterlilly_square.png',
     round: '/Assets/hand_e_waterlilly_round.png',
     stiletto: '/Assets/hand_e_waterlilly_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 20,
   },
   {
@@ -304,7 +325,7 @@ const colourList = [
     square: '/Assets/hand_e_gilly_square.png',
     round: '/Assets/hand_e_gilly_round.png',
     stiletto: '/Assets/hand_e_gilly_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 21,
   },
   {
@@ -315,7 +336,7 @@ const colourList = [
     square: '/Assets/hand_e_angelwing_square.png',
     round: '/Assets/hand_e_angelwing_round.png',
     stiletto: '/Assets/hand_e_angelwing_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 22,
   },
   {
@@ -326,7 +347,7 @@ const colourList = [
     square: '/Assets/hand_e_flirtingagain_square.png',
     round: '/Assets/hand_e_flirtingagain_round.png',
     stiletto: '/Assets/hand_e_flirtingagain_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 23,
   },
   {
@@ -337,7 +358,7 @@ const colourList = [
     square: '/Assets/hand_e_flirtingagain_square.png',
     round: '/Assets/hand_e_flirtingagain_round.png',
     stiletto: '/Assets/hand_e_flirtingagain_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 24,
   },
   {
@@ -348,7 +369,7 @@ const colourList = [
     square: '/Assets/hand_e_miami_square.png',
     round: '/Assets/hand_e_miami_round.png',
     stiletto: '/Assets/hand_e_miami_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 25,
   },
   {
@@ -359,7 +380,7 @@ const colourList = [
     square: '/Assets/hand_e_hotlips_square.png',
     round: '/Assets/hand_e_hotlips_round.png',
     stiletto: '/Assets/hand_e_hotlips_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 26,
   },
   {
@@ -370,7 +391,7 @@ const colourList = [
     square: '/Assets/hand_e_twiggy_square.png',
     round: '/Assets/hand_e_twiggy_round.png',
     stiletto: '/Assets/hand_e_twiggy_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 27,
   },
   {
@@ -381,7 +402,7 @@ const colourList = [
     square: '/Assets/hand_e_peach_square.png',
     round: '/Assets/hand_e_peach_round.png',
     stiletto: '/Assets/hand_e_peach_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 28,
   },
   {
@@ -392,7 +413,7 @@ const colourList = [
     square: '/Assets/hand_e_coraltouch_square.png',
     round: '/Assets/hand_e_coraltouch_round.png',
     stiletto: '/Assets/hand_e_coraltouch_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 29,
   },
   {
@@ -403,7 +424,7 @@ const colourList = [
     square: '/Assets/hand_e_sunshine_square.png',
     round: '/Assets/hand_e_sunshine_round.png',
     stiletto: '/Assets/hand_e_sunshine_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 30,
   },
   {
@@ -414,7 +435,7 @@ const colourList = [
     square: '/Assets/hand_e_orangeprincess_square.png',
     round: '/Assets/hand_e_orangeprincess_round.png',
     stiletto: '/Assets/hand_e_orangeprincess_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 31,
   },
   {
@@ -425,7 +446,7 @@ const colourList = [
     square: '/Assets/hand_e_peachdaiquiri_square.png',
     round: '/Assets/hand_e_peachdaiquiri_round.png',
     stiletto: '/Assets/hand_e_peachdaiquiri_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 32,
   },
   {
@@ -436,7 +457,7 @@ const colourList = [
     square: '/Assets/hand_e_pastelv005_square.png',
     round: '/Assets/hand_e_pastelv005_round.png',
     stiletto: '/Assets/hand_e_pastelv005_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 33,
   },
   {
@@ -447,7 +468,7 @@ const colourList = [
     square: '/Assets/hand_e_pastelv082_square.png',
     round: '/Assets/hand_e_pastelv082_round.png',
     stiletto: '/Assets/hand_e_pastelv082_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 34,
   },
   {
@@ -458,7 +479,7 @@ const colourList = [
     square: '/Assets/hand_e_bluemarine_square.png',
     round: '/Assets/hand_e_bluemarine_round.png',
     stiletto: '/Assets/hand_e_bluemarine_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 35,
   },
   {
@@ -469,7 +490,7 @@ const colourList = [
     square: '/Assets/hand_e_michelle_square.png',
     round: '/Assets/hand_e_michelle_round.png',
     stiletto: '/Assets/hand_e_michelle_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 36,
   },
   {
@@ -480,7 +501,7 @@ const colourList = [
     square: '/Assets/hand_e_pastelv110_square.png',
     round: '/Assets/hand_e_pastelv110_round.png',
     stiletto: '/Assets/hand_e_pastelv110_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 37,
   },
   {
@@ -491,7 +512,7 @@ const colourList = [
     square: '/Assets/hand_e_pastelv110_square.png',
     round: '/Assets/hand_e_pastelv110_round.png',
     stiletto: '/Assets/hand_e_pastelv110_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 38,
   },
   {
@@ -502,7 +523,7 @@ const colourList = [
     square: '/Assets/hand_e_serena_square.png',
     round: '/Assets/hand_e_serena_round.png',
     stiletto: '/Assets/hand_e_serena_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 39,
   },
   {
@@ -513,7 +534,7 @@ const colourList = [
     square: '/Assets/hand_e_candy_square.png',
     round: '/Assets/hand_e_candy_round.png',
     stiletto: '/Assets/hand_e_candy_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 40,
   },
   {
@@ -524,7 +545,7 @@ const colourList = [
     square: '/Assets/hand_e_crimsoncharm_square.png',
     round: '/Assets/hand_e_crimsoncharm_round.png',
     stiletto: '/Assets/hand_e_crimsoncharm_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 41,
   },
   {
@@ -535,7 +556,7 @@ const colourList = [
     square: '/Assets/hand_e_belladonna_square.png',
     round: '/Assets/hand_e_belladonna_round.png',
     stiletto: '/Assets/hand_e_belladonna_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 42,
   },
   {
@@ -546,7 +567,7 @@ const colourList = [
     square: '/Assets/hand_e_bonfire_square.png',
     round: '/Assets/hand_e_bonfire_round.png',
     stiletto: '/Assets/hand_e_bonfire_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 43,
   },
   {
@@ -557,7 +578,7 @@ const colourList = [
     square: '/Assets/hand_e_velvetred_square.png',
     round: '/Assets/hand_e_velvetred_round.png',
     stiletto: '/Assets/hand_e_velvetred_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 44,
   },
   {
@@ -568,7 +589,7 @@ const colourList = [
     square: '/Assets/hand_e_jam_square.png',
     round: '/Assets/hand_e_jam_round.png',
     stiletto: '/Assets/hand_e_jam_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 45,
   },
   {
@@ -579,7 +600,7 @@ const colourList = [
     square: '/Assets/hand_e_cacao_square.png',
     round: '/Assets/hand_e_cacao_round.png',
     stiletto: '/Assets/hand_e_cacao_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 46,
   },
   {
@@ -590,7 +611,7 @@ const colourList = [
     square: '/Assets/hand_e_impulsive_square.png',
     round: '/Assets/hand_e_impulsive_round.png',
     stiletto: '/Assets/hand_e_impulsive_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 47,
   },
   {
@@ -601,7 +622,7 @@ const colourList = [
     square: '/Assets/hand_e_deepestmauve_square.png',
     round: '/Assets/hand_e_deepestmauve_round.png',
     stiletto: '/Assets/hand_e_deepestmauve_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 48,
   },
   {
@@ -612,7 +633,7 @@ const colourList = [
     square: '/Assets/hand_e_berrylicious_square.png',
     round: '/Assets/hand_e_berrylicious_round.png',
     stiletto: '/Assets/hand_e_berrylicious_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 49,
   },
   {
@@ -623,7 +644,7 @@ const colourList = [
     square: '/Assets/hand_e_cosmos_square.png',
     round: '/Assets/hand_e_cosmos_round.png',
     stiletto: '/Assets/hand_e_cosmos_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 50,
   },
   {
@@ -634,7 +655,7 @@ const colourList = [
     square: '/Assets/hand_e_heartless_square.png',
     round: '/Assets/hand_e_heartless_round.png',
     stiletto: '/Assets/hand_e_heartless_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 51,
   },
   {
@@ -645,7 +666,7 @@ const colourList = [
     square: '/Assets/hand_e_n094_square.png',
     round: '/Assets/hand_e_n094_round.png',
     stiletto: '/Assets/hand_e_n094_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 52,
   },
   {
@@ -656,7 +677,7 @@ const colourList = [
     square: '/Assets/hand_e_brittany_square.png',
     round: '/Assets/hand_e_brittany_round.png',
     stiletto: '/Assets/hand_e_brittany_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 53,
   },
   {
@@ -667,7 +688,7 @@ const colourList = [
     square: '/Assets/hand_e_shadow_square.png',
     round: '/Assets/hand_e_shadow_round.png',
     stiletto: '/Assets/hand_e_shadow_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 54,
   },
   {
@@ -678,7 +699,7 @@ const colourList = [
     square: '/Assets/hand_e_jumanji_square.png',
     round: '/Assets/hand_e_jumanji_round.png',
     stiletto: '/Assets/hand_e_jumanji_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 55,
   },
   // {
@@ -700,7 +721,7 @@ const colourList = [
     square: '/Assets/hand_e_jungle_square.png',
     round: '/Assets/hand_e_jungle_round.png',
     stiletto: '/Assets/hand_e_jungle_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 57,
   },
   {
@@ -711,7 +732,7 @@ const colourList = [
     square: '/Assets/hand_e_galaxy_square.png',
     round: '/Assets/hand_e_galaxy_round.png',
     stiletto: '/Assets/hand_e_galaxy_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 58,
   },
   {
@@ -722,7 +743,7 @@ const colourList = [
     square: '/Assets/hand_e_royalnavy_square.png',
     round: '/Assets/hand_e_royalnavy_round.png',
     stiletto: '/Assets/hand_e_royalnavy_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 59,
   },
   {
@@ -733,7 +754,7 @@ const colourList = [
     square: '/Assets/hand_e_nightfall_square.png',
     round: '/Assets/hand_e_nightfall_round.png',
     stiletto: '/Assets/hand_e_nightfall_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 60,
   },
   {
@@ -744,7 +765,7 @@ const colourList = [
     square: '/Assets/hand_e_jetblack_square.png',
     round: '/Assets/hand_e_jetblack_round.png',
     stiletto: '/Assets/hand_e_jetblack_stiletto.png',
-    price: 25,
+    price: 22,
     objectID: 61,
   },
 ];
@@ -815,7 +836,8 @@ class App extends Component {
       baseList: baseList,
       chosenBase: "",
       basePrice: 0,
-      materialList: materialList,
+      materialListExtensions: materialListExtensions,
+      materialListNaturals: materialListNaturals,
       chosenMaterial: "",
       materialPrice: 0,
       colourList: colourList,
@@ -929,7 +951,22 @@ class App extends Component {
                   {({ on, toggle }) => (
                     <div className="sideBar">
                       {on && <Table
-                        list={materialList}
+                        list={materialListExtensions}
+                        onPick={this.onPick}
+                             />}
+                      <button onClick={toggle}>Material</button>
+                      {!on && <h1 className="label">2</h1>}
+                    </div>
+                  )}
+                </Toggle>
+                : null
+              }
+              { this.state.chosenBase.style === 'natural'
+                ? <Toggle>
+                  {({ on, toggle }) => (
+                    <div className="sideBar">
+                      {on && <Table
+                        list={materialListNaturals}
                         onPick={this.onPick}
                              />}
                       <button onClick={toggle}>Material</button>
@@ -1042,7 +1079,10 @@ class Table extends Component {
           <Button onClick={() => onPick(pick)} type="radio" key={pick.objectID} className="colBox">
             <span>
               <div className="colourPeak" style={{ backgroundColor: pick.hex }}>
-                <img src={pick.icon} alt="icon" />
+                { pick.icon
+                  ? <img src={pick.icon} alt="icon" />
+                  : null
+                }
               </div>
             </span>
             <span>
