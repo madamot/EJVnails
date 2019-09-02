@@ -108,9 +108,29 @@ h5 {
     top: -200px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 855px) {
   .first {
-    height: 90vh;
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 775px) {
+  .first {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 630px) {
+  .first {
+    height: 65vh;
+  }
+}
+@media screen and (max-width: 580px) {
+  .first {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 520px) {
+  .first {
+    height: 55vh;
   }
 }
 
@@ -187,13 +207,7 @@ object {
   position: relative;
   overflow: hidden;
 }
-@media screen and (max-width: 700px) {
-  #landscape {
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-  }
-}
+
 
 .svg-heading {
   position: relative;
