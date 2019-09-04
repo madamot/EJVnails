@@ -40,18 +40,18 @@ const Home = () => {
             <hr/>
             <ul id="service-icons">
               <li>
-                <img alt="Extensions icon" src={extensions} height="100px" />
+                <img className="homepage_icons" alt="Extensions icon" src={extensions} height="100px" />
                 <br /><br />Extensions
               </li>
               <li>
-                <img alt="Manicures icon" src={manicures} height="100px" />
+                <img className="homepage_icons" alt="Manicures icon" src={manicures} height="100px" />
                 <br /><br />Manicures
               </li>
               <li>
-                <img alt="BIAB icon" src={biab} height="100px" />
+                <img className="homepage_icons" alt="BIAB icon" src={biab} height="100px" />
                 <br /><br />BIAB</li>
               <li>
-                <img alt="Hard Gel icon" src={hardgel} height="100px" />
+                <img className="homepage_icons" alt="Hard Gel icon" src={hardgel} height="100px" />
                 <br /><br />Hard Gel</li>
             </ul>
             <div className="pricelist-container">
@@ -134,7 +134,7 @@ const Home = () => {
               </div>
               <div id="col1">
                 <h5>What started out as a hobby about 2 years ago, being bought a gel kit from my mum on my birthday has turned into something much bigger. Since then I have spent way too much money trying out different brands and technologies trying to find the perfect product for me and my clients.</h5>
-                <h5>The Gel Bottle is my brand of choice and what I swear by... blah blah blah idk</h5>
+                <h5>The Gel Bottle is my brand of choice now and and what I use to provide all of my services.</h5>
               </div>
               <div id="col2">
                 <h5>Since moving from London and starting University I am offering services on and around campus, Winchester, Fareham and everywhere in between.</h5>
