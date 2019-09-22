@@ -1,0 +1,323 @@
+.App {
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  font-weight: 900;
+  color: #BEBEBE;
+  background-color: #fff;
+  font-size: 1.5em;
+  hyphens: manual;
+}
+button:focus {
+  outline: 0;
+}
+
+ul > li {
+  display: inline-block;
+}
+
+#list {
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
+
+.colBox {
+  margin: 20px;
+  padding: 15px;
+  width: 70px;
+  display: inline-block;
+  font-weight: normal;
+  color: #000;
+  background-color: #fff;
+  font-size: 12px;
+}
+@media screen and (max-width: 575px) {
+  .colBox {
+    padding: 0px;
+    margin: 10px;
+  }
+}
+.colBox:focus {
+  outline: 0;
+  color: #fff;
+  background-color: grey;
+}
+.colBox:hover {
+  outline: 0;
+  color: #000;
+  background-color: #e8e8e8;
+}
+.colBox:active {
+  outline: 0;
+  color: #fff;
+  background-color: grey;
+}
+
+.colourPeak {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.sideBarContainer {
+  height: 89vh;
+  width: 30%;
+  bottom: 0;
+  overflow: scroll;
+}
+@media screen and (max-width: 575px) {
+  .sideBarContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+    border: solid 10px #fff;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  div.sideBarContainer .sideBar {
+    display: inline-block;
+  }
+}
+
+.sideBar {
+  height: auto;
+  overflow: scroll;
+  max-height: 50vh;
+  min-height: 33.333%;
+  border-bottom: solid 10px #fff;
+  border-right: solid 10px #fff;
+  margin: auto;
+}
+.sideBar, ul {
+  list-style: none;
+  overflow: scroll;
+}
+@media screen and (max-width: 575px) {
+  .sideBar {
+    width: 80vw;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 0;
+    overflow-y: hidden;
+  }
+  #handPic {
+    height: 455px;
+  }
+}
+
+.label {
+  font-weight: 900;
+  color: #BEBEBE;
+  font-size: 3em;
+
+}
+
+.bottomBar {
+  background-color: #f6f6f6;
+  border-top: solid 10px #fff;
+  width: 100%;
+  height: 10vh;
+  bottom: 0px;
+  position: fixed;
+  left: 0;
+}
+@media screen and (max-width: 575px) {
+  .bottomBar {
+    top: 0;
+    border-bottom: solid 5px #fff;
+    border-top: 0;
+  }
+}
+
+.slidecontainer {
+  padding: 50px;
+}
+
+#total {
+  padding: 0;
+  margin: 0;
+}
+
+Footer {
+  text-align: center;
+}
+
+#footer-container {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+#app-button {
+  display: inline;
+  width: 250px;
+  background-color: #EB008B;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 10px;
+  overflow-wrap: word-break;
+}
+#share-button {
+  display: inline;
+  width: 250px;
+  background-color: #adda8b;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 5px;
+}
+
+#share-button {
+  display: inline-block;
+}
+@media screen and (max-width: 575px) {
+  #share-button, #app-button {
+    width: 100px;
+    padding: 5px;
+    font-size: 8px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+}
+
+.social-button {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 15px;
+  text-align: center;
+}
+
+#price {
+  float: right;
+  padding: 15px;
+}
+
+#logoApp {
+  float: left;
+  padding: 15px;
+}
+
+.visualiser {
+  height: auto;
+  width: 69%;
+  right: 0;
+  position: absolute;
+  bottom: 9vh;
+  z-index: 0;
+  overflow: hidden;
+  /* background-image: linear-gradient(to bottom right, orange, pink); */
+}
+@media screen and (max-width: 575px) {
+  .visualiser {
+    bottom: 21.8vh;
+    height: auto;
+    width: 100%;
+
+  }
+  #handPic {
+    height: 674px;
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 575px) and (max-height: 875px) {
+  #handPic {
+    height: 574px;
+  }
+}
+@media screen and (max-width: 575px) and (max-height: 725px) {
+  #handPic {
+    height: 525px;
+  }
+}
+@media screen and (max-width: 575px) and (max-height: 675px) {
+  #handPic {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 575px) and (max-height: 575px) {
+  #handPic {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 575px) and (max-height: 850px) {
+  #handPic {
+    height: 800px;
+  }
+}
+@media screen and (min-width: 575px) and (max-height: 750px) {
+  #handPic {
+    height: 700px;
+  }
+}
+@media screen and (min-width: 575px) and (max-height: 660px) {
+  #handPic {
+    height: 600px;
+  }
+}
+@media screen and (min-width: 575px) and (max-height: 575px) {
+  #handPic {
+    height: 550px;
+  }
+}
+@media screen and (min-width: 575px) and (max-height: 525px) {
+  #handPic {
+    height: 400px;
+  }
+}
+
+#handPic {
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) and (max-height: 954px) {
+  #promo {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) and (max-height: 770px) {
+  #promo {
+    font-size: 12px;
+  }
+}
+
+/* @media screen and (max-height: 875px) {
+  #handPic {
+    height: 800px;
+  }
+}
+@media screen and (max-height: 736px) {
+  #handPic {
+    height: 675px;
+  }
+}
+@media screen and (max-height: 650px) {
+  #handPic {
+    height: 550px;
+  }
+}
+@media screen and (max-height: 575px) {
+  #handPic {
+    height: 430px;
+  }
+}
+@media screen and (max-height: 550px) {
+  #handPic {
+    height: 400px;
+  }
+} */
