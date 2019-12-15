@@ -29,7 +29,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 const baseList = [
   {
     name: 'On Naturals',
-    class: 'base',
+    group: 'base',
     style: 'natural',
     icon: naturals,
     handChoice: '/Assets/hand_n1.png',
@@ -38,7 +38,7 @@ const baseList = [
   },
   {
     name: 'Extensions',
-    class: 'base',
+    group: 'base',
     style: 'extensions',
     icon: extensions,
     handChoice: '/Assets/hand_e1.png',
@@ -50,7 +50,7 @@ const baseList = [
 const materialListExtensions = [
   {
     name: 'BIAB',
-    class: 'material',
+    group: 'material',
     icon: biab,
     style: 'natural',
     handChoice: '/Assets/hand_n1.png',
@@ -59,7 +59,7 @@ const materialListExtensions = [
   },
   {
     name: 'Hard Gel',
-    class: 'material',
+    group: 'material',
     icon: hardgel,
     style: 'extensions',
     handChoice: '/Assets/hand_e1.png',
@@ -71,7 +71,7 @@ const materialListExtensions = [
 const materialListNaturals = [
   {
     name: '2-in-1 Base',
-    class: 'material',
+    group: 'material',
     hex: '#FFA500',
     style: 'natural',
     handChoice: '/Assets/hand_n1.png',
@@ -80,7 +80,7 @@ const materialListNaturals = [
   },
   {
     name: 'Rubber Base Coat',
-    class: 'material',
+    group: 'material',
     hex: '#FFA500',
     style: 'natural',
     handChoice: '/Assets/hand_n1.png',
@@ -89,7 +89,7 @@ const materialListNaturals = [
   },
   {
     name: 'BIAB Overlay',
-    class: 'material',
+    group: 'material',
     icon: biab,
     style: 'natural',
     handChoice: '/Assets/hand_n1.png',
@@ -101,7 +101,7 @@ const materialListNaturals = [
 const colourList = [
   {
     name: 'Snow Queen',
-    class: 'colour',
+    group: 'colour',
     hex: '#afb5b6',
     natural: '/Assets/hand_n_snowqueen.png',
     square: '/Assets/hand_e_snowqueen_square.png',
@@ -112,7 +112,7 @@ const colourList = [
   },
   {
     name: 'Nightclub',
-    class: 'colour',
+    group: 'colour',
     hex: '#dddddf',
     natural: '/Assets/hand_n_nightclub.png',
     square: '/Assets/hand_e_nightclub_square.png',
@@ -123,7 +123,7 @@ const colourList = [
   },
   {
     name: 'Rose Gold',
-    class: 'colour',
+    group: 'colour',
     hex: '#caad93',
     natural: '/Assets/hand_n_rosegold.png',
     square: '/Assets/hand_e_rosegold_square.png',
@@ -134,7 +134,7 @@ const colourList = [
   },
   {
     name: 'Daisy',
-    class: 'colour',
+    group: 'colour',
     hex: '#f2f2f2',
     natural: '/Assets/hand_n_daisy.png',
     square: '/Assets/hand_e_daisy_square.png',
@@ -145,7 +145,7 @@ const colourList = [
   },
   {
     name: 'J01',
-    class: 'colour',
+    group: 'colour',
     hex: '#dec3ba',
     natural: '/Assets/hand_n_j01.png',
     square: '/Assets/hand_e_j01_square.png',
@@ -156,7 +156,7 @@ const colourList = [
   },
   {
     name: 'Fluffy Cotton',
-    class: 'colour',
+    group: 'colour',
     hex: '#e7ddd7',
     natural: '/Assets/hand_n_fluffycotton.png',
     square: '/Assets/hand_e_fluffycotton_square.png',
@@ -167,7 +167,7 @@ const colourList = [
   },
   {
     name: 'Diana',
-    class: 'colour',
+    group: 'colour',
     hex: '#cfccda',
     natural: '/Assets/hand_n_diana.png',
     square: '/Assets/hand_e_diana_square.png',
@@ -178,7 +178,7 @@ const colourList = [
   },
   {
     name: 'Dolly',
-    class: 'colour',
+    group: 'colour',
     hex: '#e6c9bf',
     natural: '/Assets/hand_n_dolly.png',
     square: '/Assets/hand_e_dolly_square.png',
@@ -189,7 +189,7 @@ const colourList = [
   },
   {
     name: 'Pina Colada',
-    class: 'colour',
+    group: 'colour',
     hex: '#dbcecd',
     natural: '/Assets/hand_n_pinacolada.png',
     square: '/Assets/hand_e_pinacolada_square.png',
@@ -200,7 +200,7 @@ const colourList = [
   },
   {
     name: 'Eve',
-    class: 'colour',
+    group: 'colour',
     hex: '#b59f96',
     natural: '/Assets/hand_n_eve.png',
     square: '/Assets/hand_e_eve_square.png',
@@ -211,7 +211,7 @@ const colourList = [
   },
   {
     name: 'Gossip',
-    class: 'colour',
+    group: 'colour',
     hex: '#e9dce5',
     natural: '/Assets/hand_n_gossip.png',
     square: '/Assets/hand_e_gossip_square.png',
@@ -222,7 +222,7 @@ const colourList = [
   },
   {
     name: 'V07',
-    class: 'colour',
+    group: 'colour',
     hex: '#f2deda',
     natural: '/Assets/hand_n_v07.png',
     square: '/Assets/hand_e_v07_square.png',
@@ -233,7 +233,7 @@ const colourList = [
   },
   {
     name: 'Teddy',
-    class: 'colour',
+    group: 'colour',
     hex: '#dbaca6',
     natural: '/Assets/hand_n_teddy.png',
     square: '/Assets/hand_e_teddy_square.png',
@@ -244,7 +244,7 @@ const colourList = [
   },
   {
     name: 'French Bloom',
-    class: 'colour',
+    group: 'colour',
     hex: '#dcadbe',
     natural: '/Assets/hand_n_baby.png',
     square: '/Assets/hand_e_baby_square.png',
@@ -255,7 +255,7 @@ const colourList = [
   },
   {
     name: 'Baby',
-    class: 'colour',
+    group: 'colour',
     hex: '#dcadbe',
     natural: '/Assets/hand_n_baby.png',
     square: '/Assets/hand_e_baby_square.png',
@@ -266,7 +266,7 @@ const colourList = [
   },
   {
     name: 'Biab 18',
-    class: 'colour',
+    group: 'colour',
     hex: '#dcadbe',
     natural: '/Assets/hand_n_baby.png',
     square: '/Assets/hand_e_baby_square.png',
@@ -277,7 +277,7 @@ const colourList = [
   },
   {
     name: 'June',
-    class: 'colour',
+    group: 'colour',
     hex: '#e7cfe2',
     natural: '/Assets/hand_n_june.png',
     square: '/Assets/hand_e_june_square.png',
@@ -288,7 +288,7 @@ const colourList = [
   },
   {
     name: 'Marilyn',
-    class: 'colour',
+    group: 'colour',
     hex: '#e7b6d0',
     natural: '/Assets/hand_n_marilyn.png',
     square: '/Assets/hand_e_marilyn_square.png',
@@ -299,7 +299,7 @@ const colourList = [
   },
   {
     name: 'Hollywood Star',
-    class: 'colour',
+    group: 'colour',
     hex: '#a65d95',
     natural: '/Assets/hand_n_hollywoodstar.png',
     square: '/Assets/hand_e_hollywoodstar_square.png',
@@ -310,7 +310,7 @@ const colourList = [
   },
   {
     name: 'Pink Panther',
-    class: 'colour',
+    group: 'colour',
     hex: '#f0a9d2',
     natural: '/Assets/hand_n_pinkpanther.png',
     square: '/Assets/hand_e_pinkpanther_square.png',
@@ -321,7 +321,7 @@ const colourList = [
   },
   {
     name: 'Waterlilly',
-    class: 'colour',
+    group: 'colour',
     hex: '#eb637b',
     natural: '/Assets/hand_n_waterlilly.png',
     square: '/Assets/hand_e_waterlilly_square.png',
@@ -332,7 +332,7 @@ const colourList = [
   },
   {
     name: 'Gilly',
-    class: 'colour',
+    group: 'colour',
     hex: '#e860a0',
     natural: '/Assets/hand_n_gilly.png',
     square: '/Assets/hand_e_gilly_square.png',
@@ -343,7 +343,7 @@ const colourList = [
   },
   {
     name: 'Angel Wing',
-    class: 'colour',
+    group: 'colour',
     hex: '#e04053',
     natural: '/Assets/hand_n_angelwing.png',
     square: '/Assets/hand_e_angelwing_square.png',
@@ -354,7 +354,7 @@ const colourList = [
   },
   {
     name: 'Flirting Again',
-    class: 'colour',
+    group: 'colour',
     hex: '#892678',
     natural: '/Assets/hand_n_flirtingagain.png',
     square: '/Assets/hand_e_flirtingagain_square.png',
@@ -365,7 +365,7 @@ const colourList = [
   },
   {
     name: 'Venus',
-    class: 'colour',
+    group: 'colour',
     hex: '#892678',
     natural: '/Assets/hand_n_flirtingagain.png',
     square: '/Assets/hand_e_flirtingagain_square.png',
@@ -376,7 +376,7 @@ const colourList = [
   },
   {
     name: 'Miami',
-    class: 'colour',
+    group: 'colour',
     hex: '#c13492',
     natural: '/Assets/hand_n_miami.png',
     square: '/Assets/hand_e_miami_square.png',
@@ -387,7 +387,7 @@ const colourList = [
   },
   {
     name: 'Hot Lips',
-    class: 'colour',
+    group: 'colour',
     hex: '#df4928',
     natural: '/Assets/hand_n_hotlips.png',
     square: '/Assets/hand_e_hotlips_square.png',
@@ -398,7 +398,7 @@ const colourList = [
   },
   {
     name: 'Twiggy',
-    class: 'colour',
+    group: 'colour',
     hex: '#ec6251',
     natural: '/Assets/hand_n_twiggy.png',
     square: '/Assets/hand_e_twiggy_square.png',
@@ -409,7 +409,7 @@ const colourList = [
   },
   {
     name: 'Peach',
-    class: 'colour',
+    group: 'colour',
     hex: '#f19f79',
     natural: '/Assets/hand_n_peach.png',
     square: '/Assets/hand_e_peach_square.png',
@@ -420,7 +420,7 @@ const colourList = [
   },
   {
     name: 'Coral Touch',
-    class: 'colour',
+    group: 'colour',
     hex: '#f0a191',
     natural: '/Assets/hand_n_coraltouch.png',
     square: '/Assets/hand_e_coraltouch_square.png',
@@ -431,7 +431,7 @@ const colourList = [
   },
   {
     name: 'Sunshine',
-    class: 'colour',
+    group: 'colour',
     hex: '#ec8f90',
     natural: '/Assets/hand_n_sunshine.png',
     square: '/Assets/hand_e_sunshine_square.png',
@@ -442,7 +442,7 @@ const colourList = [
   },
   {
     name: 'Orange Princess',
-    class: 'colour',
+    group: 'colour',
     hex: '#f4ba70',
     natural: '/Assets/hand_n_orangeprincess.png',
     square: '/Assets/hand_e_orangeprincess_square.png',
@@ -453,7 +453,7 @@ const colourList = [
   },
   {
     name: 'Peach Daiquiri',
-    class: 'colour',
+    group: 'colour',
     hex: '#f1a073',
     natural: '/Assets/hand_n_peachdaiquiri.png',
     square: '/Assets/hand_e_peachdaiquiri_square.png',
@@ -464,7 +464,7 @@ const colourList = [
   },
   {
     name: 'Pastel v005',
-    class: 'colour',
+    group: 'colour',
     hex: '#cac3d7',
     natural: '/Assets/hand_n_pastelv005.png',
     square: '/Assets/hand_e_pastelv005_square.png',
@@ -475,7 +475,7 @@ const colourList = [
   },
   {
     name: 'Pastel v082',
-    class: 'colour',
+    group: 'colour',
     hex: '#b9d8d3',
     natural: '/Assets/hand_n_pastelv082.png',
     square: '/Assets/hand_e_pastelv082_square.png',
@@ -486,7 +486,7 @@ const colourList = [
   },
   {
     name: 'Blue Marine',
-    class: 'colour',
+    group: 'colour',
     hex: '#b4cdde',
     natural: '/Assets/hand_n_bluemarine.png',
     square: '/Assets/hand_e_bluemarine_square.png',
@@ -497,7 +497,7 @@ const colourList = [
   },
   {
     name: 'Michelle',
-    class: 'colour',
+    group: 'colour',
     hex: '#b4cdde',
     natural: '/Assets/hand_n_michelle.png',
     square: '/Assets/hand_e_michelle_square.png',
@@ -508,7 +508,7 @@ const colourList = [
   },
   {
     name: 'Pastel v110',
-    class: 'colour',
+    group: 'colour',
     hex: '#ebdca8',
     natural: '/Assets/hand_n_pastelv110.png',
     square: '/Assets/hand_e_pastelv110_square.png',
@@ -519,7 +519,7 @@ const colourList = [
   },
   {
     name: 'Mustard',
-    class: 'colour',
+    group: 'colour',
     hex: '#ebdca8',
     natural: '/Assets/hand_n_pastelv110.png',
     square: '/Assets/hand_e_pastelv110_square.png',
@@ -530,7 +530,7 @@ const colourList = [
   },
   {
     name: 'Serena',
-    class: 'colour',
+    group: 'colour',
     hex: '#adda8b',
     natural: '/Assets/hand_n_serena.png',
     square: '/Assets/hand_e_serena_square.png',
@@ -541,7 +541,7 @@ const colourList = [
   },
   {
     name: 'Candy',
-    class: 'colour',
+    group: 'colour',
     hex: '#c73727',
     natural: '/Assets/hand_n_candy.png',
     square: '/Assets/hand_e_candy_square.png',
@@ -552,7 +552,7 @@ const colourList = [
   },
   {
     name: 'Crimson Charm',
-    class: 'colour',
+    group: 'colour',
     hex: '#cf544e',
     natural: '/Assets/hand_n_crimsoncharm.png',
     square: '/Assets/hand_e_crimsoncharm_square.png',
@@ -563,7 +563,7 @@ const colourList = [
   },
   {
     name: 'Belladonna',
-    class: 'colour',
+    group: 'colour',
     hex: '#8b3b36',
     natural: '/Assets/hand_n_belladonna.png',
     square: '/Assets/hand_e_belladonna_square.png',
@@ -574,7 +574,7 @@ const colourList = [
   },
   {
     name: 'Bonfire',
-    class: 'colour',
+    group: 'colour',
     hex: '#913835',
     natural: '/Assets/hand_n_bonfire.png',
     square: '/Assets/hand_e_bonfire_square.png',
@@ -585,7 +585,7 @@ const colourList = [
   },
   {
     name: 'Velvet Red',
-    class: 'colour',
+    group: 'colour',
     hex: '#553c3a',
     natural: '/Assets/hand_n_velvetred.png',
     square: '/Assets/hand_e_velvetred_square.png',
@@ -596,7 +596,7 @@ const colourList = [
   },
   {
     name: 'Jam',
-    class: 'colour',
+    group: 'colour',
     hex: '#662e28',
     natural: '/Assets/hand_n_jam.png',
     square: '/Assets/hand_e_jam_square.png',
@@ -607,7 +607,7 @@ const colourList = [
   },
   {
     name: 'Cacao',
-    class: 'colour',
+    group: 'colour',
     hex: '#84615f',
     natural: '/Assets/hand_n_cacao.png',
     square: '/Assets/hand_e_cacao_square.png',
@@ -618,7 +618,7 @@ const colourList = [
   },
   {
     name: 'Impulsive',
-    class: 'colour',
+    group: 'colour',
     hex: '#ad7878',
     natural: '/Assets/hand_n_impulsive.png',
     square: '/Assets/hand_e_impulsive_square.png',
@@ -629,7 +629,7 @@ const colourList = [
   },
   {
     name: 'Deepest Mauve',
-    class: 'colour',
+    group: 'colour',
     hex: '#8f7b78',
     natural: '/Assets/hand_n_deepestmauve.png',
     square: '/Assets/hand_e_deepestmauve_square.png',
@@ -640,7 +640,7 @@ const colourList = [
   },
   {
     name: 'Berrylicious',
-    class: 'colour',
+    group: 'colour',
     hex: '#9f5468',
     natural: '/Assets/hand_n_berrylicious.png',
     square: '/Assets/hand_e_berrylicious_square.png',
@@ -651,7 +651,7 @@ const colourList = [
   },
   {
     name: 'Cosmos',
-    class: 'colour',
+    group: 'colour',
     hex: '#dbbac2',
     natural: '/Assets/hand_n_cosmos.png',
     square: '/Assets/hand_e_cosmos_square.png',
@@ -662,7 +662,7 @@ const colourList = [
   },
   {
     name: 'Heartless',
-    class: 'colour',
+    group: 'colour',
     hex: '#794055',
     natural: '/Assets/hand_n_heartless.png',
     square: '/Assets/hand_e_heartless_square.png',
@@ -673,7 +673,7 @@ const colourList = [
   },
   {
     name: 'N094',
-    class: 'colour',
+    group: 'colour',
     hex: '#d5d4e1',
     natural: '/Assets/hand_n_n094.png',
     square: '/Assets/hand_e_n094_square.png',
@@ -684,7 +684,7 @@ const colourList = [
   },
   {
     name: 'Brittany',
-    class: 'colour',
+    group: 'colour',
     hex: '#888f91',
     natural: '/Assets/hand_n_brittany.png',
     square: '/Assets/hand_e_brittany_square.png',
@@ -695,7 +695,7 @@ const colourList = [
   },
   {
     name: 'Shadow',
-    class: 'colour',
+    group: 'colour',
     hex: '#898a8d',
     natural: '/Assets/hand_n_shadow.png',
     square: '/Assets/hand_e_shadow_square.png',
@@ -706,7 +706,7 @@ const colourList = [
   },
   {
     name: 'Jumanji',
-    class: 'colour',
+    group: 'colour',
     hex: '#acbba9',
     natural: '/Assets/hand_n_jumanji.png',
     square: '/Assets/hand_e_jumanji_square.png',
@@ -717,7 +717,7 @@ const colourList = [
   },
   // {
   //   name: 'Thermo 4',
-  //   class: 'colour',
+  //   group: 'colour',
   //   hex: '#f6f6f6',
   //   natural: '/Assets/hand_n_thermo4.png',
   //   square: '/Assets/hand_e_thermo4_square.png',
@@ -728,7 +728,7 @@ const colourList = [
   // },
   {
     name: 'Jungle',
-    class: 'colour',
+    group: 'colour',
     hex: '#3b5253',
     natural: '/Assets/hand_n_jungle.png',
     square: '/Assets/hand_e_jungle_square.png',
@@ -739,7 +739,7 @@ const colourList = [
   },
   {
     name: 'Galaxy',
-    class: 'colour',
+    group: 'colour',
     hex: '#514f5d',
     natural: '/Assets/hand_n_galaxy.png',
     square: '/Assets/hand_e_galaxy_square.png',
@@ -750,7 +750,7 @@ const colourList = [
   },
   {
     name: 'Royal Navy',
-    class: 'colour',
+    group: 'colour',
     hex: '#393e4b',
     natural: '/Assets/hand_n_royalnavy.png',
     square: '/Assets/hand_e_royalnavy_square.png',
@@ -761,7 +761,7 @@ const colourList = [
   },
   {
     name: 'Nightfall',
-    class: 'colour',
+    group: 'colour',
     hex: '#3a3d43',
     natural: '/Assets/hand_n_nightfall.png',
     square: '/Assets/hand_e_nightfall_square.png',
@@ -772,7 +772,7 @@ const colourList = [
   },
   {
     name: 'Jet Black',
-    class: 'colour',
+    group: 'colour',
     hex: '#141513',
     natural: '/Assets/hand_n_jetblack.png',
     square: '/Assets/hand_e_jetblack_square.png',
@@ -786,50 +786,50 @@ const colourList = [
 const shapeList = [
   {
     name: 'Square',
-    class: 'shape',
+    group: 'shape',
     icon: extensionsSquare,
     standard: '/Assets/hand_e1.png',
-    e_shape_SQ: '/Assets/hand_e_snowqueen.png',
-    e_shape_NC: '/Assets/hand_e_nightclub.png',
+    // e_shape_SQ: '/Assets/hand_e_snowqueen.png',
+    // e_shape_NC: '/Assets/hand_e_nightclub.png',
     price: 0,
     objectID: 0,
   },
   {
     name: 'Round',
-    class: 'shape',
+    group: 'shape',
     icon: extensionsRound,
     standard: '/Assets/hand_e_round.png',
-    e_shape_SQ: '/Assets/hand_e_round_snowqueen.png',
+    // e_shape_SQ: '/Assets/hand_e_round_snowqueen.png',
     price: 0,
     objectID: 1,
   },
   // {
   //   name: 'Squoval',
-  //   class: 'shape',
+  //   group: 'shape',
   //   hex: '#FFA500',
   //   price: 10,
   //   objectID: 2,
   // },
   // {
   //   name: 'Almond',
-  //   class: 'shape',
+  //   group: 'shape',
   //   hex: '#FFA500',
   //   price: 10,
   //   objectID: 4,
   // },
   {
     name: 'Stiletto',
-    class: 'shape',
+    group: 'shape',
     icon: extensionsStiletto,
     standard: '/Assets/hand_e_stiletto.png',
-    e_shape_SQ: '/Assets/hand_e_stiletto_snowqueen.png',
-    e_shape_NC: '/Assets/hand_e_stiletto_nightclub.png',
+    // e_shape_SQ: '/Assets/hand_e_stiletto_snowqueen.png',
+    // e_shape_NC: '/Assets/hand_e_stiletto_nightclub.png',
     price: 0,
     objectID: 5,
   },
   // {
   //   name: 'Ballerina/\nCoffin',
-  //   class: 'shape',
+  //   group: 'shape',
   //   hex: '#FFA500',
   //   e_shape_SQ: '/Assets/hand_e_coffin_snowqueen.png',
   //   price: 10,
@@ -865,7 +865,7 @@ class App extends Component {
   }
 
   onPick(pick) {
-    switch (pick.class) {
+    switch (pick.group) {
       case 'base':
           this.setState({ chosenBase: pick, handChoice: pick.handChoice, basePrice: pick.price }, () => console.log(this.state.chosenBase));
           if (this.state.chosenColour) {
