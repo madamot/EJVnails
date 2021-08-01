@@ -175,8 +175,8 @@ const Home = () => {
           </div>
           <div className="slant-content" id="contact-content">
             <hr/>
-            <h2>Ask me a question or arrange an appointment at:</h2>
-            <h1>07951476008</h1>
+            {/* <h2>Ask me a question or arrange an appointment at:</h2> */}
+            {/* <h1>07951476008</h1> */}
             <br />
             <h2>Follow me on Social Media:</h2>
             <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ejvnails/"><FontAwesomeIcon icon={['fab', 'instagram']} size="6x" /></a>
